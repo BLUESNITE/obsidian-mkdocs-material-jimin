@@ -1,0 +1,513 @@
+# Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Material for MkDocs
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Martin Donath
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2024 Martin Donath
+
+# Configuration
+theme:
+  name: material
+  custom_dir: material/overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - mkdocs-simple-hooks:
+      # hooks:
+        # on_config: "hooks:on_config"
+
+#  - minify:
+#      minify_html: true
+
+#extra_css:
+#  - stylesheets/extra.css
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  - material/overrides/hooks/translations.py
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/squidfunk
+
+# Extensions
+markdown_extensions:
+  - custom_extensions.obsidian_callouts
+  - custom_extensions.obsidian_images
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+not_in_nav: |
+  /tutorials/**/*.md
+
+# Page tree
+nav:
+  - Home: index.md
+  - 01 코드 관리 도구:
+    - 01 코드 관리 도구/index.md
+    - GitLab:
+      - gitlab 서로다른 레포지토리 병합 미러링: 01 코드 관리 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
+    - SonarQube:
+      - SonarQube 설치 및 통합 가이드: 01 코드 관리 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
+  - 02 컨테이너 및 가상화:
+    - 02 컨테이너 및 가상화/index.md
+    - Docker:
+      - 도커 설치: 02 컨테이너 및 가상화/Docker/도커 설치.md
+    - Kubernetes:
+      - 쿠버-Argocd설치: 02 컨테이너 및 가상화/Kubernetes/쿠버-Argocd설치.md
+      - 쿠버-CNI의 종류: 02 컨테이너 및 가상화/Kubernetes/쿠버-CNI의 종류.md
+      - 쿠버-Istio gateway 설정: 02 컨테이너 및 가상화/Kubernetes/쿠버-Istio gateway 설정.md
+      - 쿠버-MetalLB 세팅이슈: 02 컨테이너 및 가상화/Kubernetes/쿠버-MetalLB 세팅이슈.md
+      - 쿠버-리디렉션이슈: 02 컨테이너 및 가상화/Kubernetes/쿠버-리디렉션이슈.md
+      - 쿠버-퍼드 생성 연습: 02 컨테이너 및 가상화/Kubernetes/쿠버-퍼드 생성 연습.md
+    - QEMU-KVM:
+      - kvm containerd 디스크 문제 해결 방법: 02 컨테이너 및 가상화/QEMU-KVM/kvm containerd 디스크 문제 해결 방법.md
+      - kvm 명령어: 02 컨테이너 및 가상화/QEMU-KVM/kvm 명령어.md
+      - kvm 아이피 확인절차: 02 컨테이너 및 가상화/QEMU-KVM/kvm 아이피 확인절차.md
+  - 03 운영체제:
+    - 03 운영체제/index.md
+    - Linux:
+      - linux-xrdp 설정: 03 운영체제/linux/linux-xrdp 설정.md
+      - linux-자동완성기능: 03 운영체제/linux/linux-자동완성기능.md
+    - Ubuntu:
+      - ubuntu desktop install: 03 운영체제/ubuntu/ubuntu desktop install.md
+    - Windows:
+      - powershell에서 디렉토리 트리보기: 03 운영체제/window/powershell에서 디렉토리 트리보기.md
+  - 04 웹 서버 및 리버스 프록시:
+    - 04 웹 서버 및 리버스 프록시/index.md
+    - Certbot:
+      - Let's encrypt: 04 웹 서버 및 리버스 프록시/Certbot/Let's encrypt.md
+    - Nginx:
+      - Nginx conf 옵션확인: 04 웹 서버 및 리버스 프록시/Nginx/Nginx conf 옵션확인.md
+      - Nginx Log 관리하기: 04 웹 서버 및 리버스 프록시/Nginx/Nginx Log 관리하기.md
+      - Nginx 설정 테스트 및 재시작: 04 웹 서버 및 리버스 프록시/Nginx/Nginx 설정 테스트 및 재시작.md
+  - 05 데이터베이스:
+    - 05 데이터베이스/index.md
+    - MySQL:
+      - Mysql-설치: 05 데이터베이스/Mysql/Mysql-설치.md
+    - PostgreSQL:
+      - PostgreSQL CLI로 설치하고 접속확인까지: 05 데이터베이스/Postgres/PostgreSQL CLI로 설치하고 접속확인까지.md
+      - PostgreSQL-설치: 05 데이터베이스/Postgres/PostgreSQL-설치.md
+  - 06 검색 및 데이터 분석:
+    - 06 검색 및 데이터 분석/index.md
+    - OpenSearch:
+      - 오픈서치-knn설정: 06 검색 및 데이터 분석/opensearch/오픈서치-knn설정.md
+      - 오픈서치-대시보드 구성 요령: 06 검색 및 데이터 분석/opensearch/오픈서치-대시보드 구성 요령.md
+      - 오픈서치-설치: 06 검색 및 데이터 분석/opensearch/오픈서치-설치.md
+  - 07 자동화 및 워크플로우:
+    - 07 자동화 및 워크플로우/index.md
+    - ArgoCD:
+      - Argocd-성능개선: 07 자동화 및 워크플로우/Argocd/Argocd-성능개선.md
+    - Jenkins:
+      - 젠킨스-agent: 07 자동화 및 워크플로우/Jenkins/젠킨스-agent.md
+      - 젠킨스-rebuild 후속작업: 07 자동화 및 워크플로우/Jenkins/젠킨스-rebuild 후속작업.md
+      - 젠킨스-슬랙: 07 자동화 및 워크플로우/Jenkins/젠킨스-슬랙.md
+  - 08 모니터링 및 시각화:
+    - 08 모니터링 및 시각화/index.md
+    - Grafana:
+      - grafana-panels 모음: 08 모니터링 및 시각화/Grafana/grafana-panels 모음.md
+    - Jconsole:
+      - Jconsole to Local: 08 모니터링 및 시각화/Jconsole/Jconsole to Local.md
+    - Sampler:
+      - sampler-설치: 08 모니터링 및 시각화/Sampler/sampler-설치.md
+    - Scouter:
+      - scouter-설치: 08 모니터링 및 시각화/Scouter/scouter-설치.md
+    - Superset:
+      - Superset을 Terraform Docker로 설치해보았다: 08 모니터링 및 시각화/Superset/Superset을 Terraform Docker로 설치해보았다.md
+  - 09 저장소 관리:
+    - 09 저장소 관리/index.md
+    - NEXUS:
+      - NEXUS Disk 관리: 09 저장소 관리/NEXUS/NEXUS Disk 관리.md
+      - NEXUS-설치: 09 저장소 관리/NEXUS/NEXUS-설치.md
+  - 10 클라우드:
+    - 10 클라우드/index.md
+    - AWS:
+      - AWS EC2에 SSH 접속하기 위한 최소작업: 10 클라우드/AWS/AWS EC2에 SSH 접속하기 위한 최소작업.md
+      - AWS 다른나라 리전에서 한국사이트 접속: 10 클라우드/AWS/AWS 다른나라 리전에서 한국사이트 접속.md
+      - AWS-EKS 자격증명하기: 10 클라우드/AWS/AWS-EKS 자격증명하기.md
+  - 11 IaC:
+    - 11 IaC/index.md
+    - Terraform provisioner 사용방법: 11 IaC/Terraform provisioner 사용방법.md
+    - Terraform `user_data` 사용 및 로그확인: 11 IaC/Terraform `user_data` 사용 및 로그확인.md
+    - Terraform 변수 정의하기: 11 IaC/Terraform 변수 정의하기.md
+    - Terraform 설치 후 테스트: 11 IaC/Terraform 설치 후 테스트.md
+  - 99 기타:
+    - 99 기타/index.md
+    - 내소개:
+      - 내 소개: 99 기타/내소개/내 소개.md
+    - 블로그:
+      - 블로그 호스팅: 99 기타/블로그/블로그 호스팅.md
+    - 생각:
+      - 스토리 포인트는 무의미하다의 글: 99 기타/생각/스토리 포인트는 무의미하다의 글.md
+      - 옳은 종류의 고집: 99 기타/생각/옳은 종류의 고집.md
+    - 옵시디언:
+      - 플러그인 - Execute Code: 99 기타/옵시디언/플러그인 - Execute Code.md
+    - 추천글:
+      - 갈때를 아는 방법: 99 기타/추천글/갈때를 아는 방법.md
+    - 학습:
+      - 내가 학습한 워크플로우: 99 기타/학습/내가 학습한 워크플로우.md
+  - Blog:
+    - blog/index.md
+    - Posts: blog/posts/index.md
+#nav:
+#  - Home: index.md
+#  - Getting started:
+#    - Installation: getting-started.md
+#    - Creating your site: creating-your-site.md
+#    - Publishing your site: publishing-your-site.md
+#    - Customization: customization.md
+#    - Conventions: conventions.md
+#    - Browser support: browser-support.md
+#    - Enterprise feedback: enterprise-support.md
+#    - Philosophy: philosophy.md
+#    - Alternatives: alternatives.md
+#    - License: license.md
+#    - Tutorials:
+#      - tutorials/index.md
+#      - "Blogs":
+#        - tutorials/blogs/basic.md
+#        - tutorials/blogs/navigation.md
+#        - tutorials/blogs/engage.md
+#      - "Social cards":
+#        - tutorials/social/basic.md
+#        - tutorials/social/custom.md
+#    - Changelog:
+#      - changelog/index.md
+#      - How to upgrade: upgrade.md
+#  - Setup:
+#    - setup/index.md
+#    - Changing the colors: setup/changing-the-colors.md
+#    - Changing the fonts: setup/changing-the-fonts.md
+#    - Changing the language: setup/changing-the-language.md
+#    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+#    - Ensuring data privacy: setup/ensuring-data-privacy.md
+#    - Setting up navigation: setup/setting-up-navigation.md
+#    - Setting up site search: setup/setting-up-site-search.md
+#    - Setting up site analytics: setup/setting-up-site-analytics.md
+#    - Setting up social cards: setup/setting-up-social-cards.md
+#    - Setting up a blog: setup/setting-up-a-blog.md
+#    - Setting up tags: setup/setting-up-tags.md
+#    - Setting up versioning: setup/setting-up-versioning.md
+#    - Setting up the header: setup/setting-up-the-header.md
+#    - Setting up the footer: setup/setting-up-the-footer.md
+#    - Adding a git repository: setup/adding-a-git-repository.md
+#    - Adding a comment system: setup/adding-a-comment-system.md
+#    - Building an optimized site: setup/building-an-optimized-site.md
+#    - Building for offline usage: setup/building-for-offline-usage.md
+#    - Extensions:
+#      - setup/extensions/index.md
+#      - Python Markdown: setup/extensions/python-markdown.md
+#      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+#  - Plugins:
+#    - plugins/index.md
+#    - Blog: plugins/blog.md
+#    - Group: plugins/group.md
+#    - Info: plugins/info.md
+#    - Meta: plugins/meta.md
+#    - Offline: plugins/offline.md
+#    - Optimize: plugins/optimize.md
+#    - Privacy: plugins/privacy.md
+#    - Projects: plugins/projects.md
+#    - Search: plugins/search.md
+#    - Social: plugins/social.md
+#    - Tags: plugins/tags.md
+#    - Typeset: plugins/typeset.md
+#    - Requirements:
+#      - Image processing: plugins/requirements/image-processing.md
+#      - Caching: plugins/requirements/caching.md
+#  - Reference:
+#    - reference/index.md
+#    - Admonitions: reference/admonitions.md
+#    - Annotations: reference/annotations.md
+#    - Buttons: reference/buttons.md
+#    - Code blocks: reference/code-blocks.md
+#    - Content tabs: reference/content-tabs.md
+#    - Data tables: reference/data-tables.md
+#    - Diagrams: reference/diagrams.md
+#    - Footnotes: reference/footnotes.md
+#    - Formatting: reference/formatting.md
+#    - Grids: reference/grids.md
+#    - Icons, Emojis: reference/icons-emojis.md
+#    - Images: reference/images.md
+#    - Lists: reference/lists.md
+#    - Math: reference/math.md
+#    - Tooltips: reference/tooltips.md
+#  - Insiders:
+#    - insiders/index.md
+#    - Why sponsor us: insiders/why-sponsor-us.md
+#    - What's in it for you: insiders/benefits.md
+#    - Who is sponsoring: insiders/our-sponsors.md
+#    - Sponsoring tiers: insiders/sponsoring-tiers.md
+#    - How to sponsor: insiders/how-to-sponsor.md
+#    - Additional information:
+#      - Payment and billing: insiders/payment-and-billing.md
+#      - Access management: insiders/access-management.md
+#      - Runtime and cancellation: insiders/runtime-and-cancellation.md
+#      - Privacy: insiders/privacy.md
+#      - License: insiders/license.md
+#      - Support: support.md
+#    - Using Insiders:
+#      - Getting started: insiders/getting-started.md
+#    - Changelog:
+#      - insiders/changelog/index.md
+#      - How to upgrade: insiders/upgrade.md
+#  - Community:
+#    - Contributing:
+#      - contributing/index.md
+#      - Reporting a bug: contributing/reporting-a-bug.md
+#      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
+#      - Requesting a change: contributing/requesting-a-change.md
+#      - Adding translations: contributing/adding-translations.md
+#      - Making a pull request: contributing/making-a-pull-request.md
+#      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+#    - Guides:
+#      - Creating a reproduction: guides/creating-a-reproduction.md
+#    - Community experts program:
+#      - insiders/community-experts-program/index.md
+#  - Blog:
+#    - blog/index.md
+
+
+# Page tree
+#nav:
+#  - Home: index.md
+#  - 코드 관리 도구:
+#    - GitLab:
+#      - gitlab 서로다른 레포지토리 병합 미러링.md
+#    - SonarQube:
+#      - SonarQube 설치 및 통합 가이드.md
+#  - 컨테이너 및 가상화:
+#    - Docker:
+#      - 도커 설치.md
+#    - Kubernetes:
+#      - 쿠버-Argocd설치.md
+#      - 쿠버-CNI의 종류.md
+#      - 쿠버-Istio gateway 설정.md
+#      - 쿠버-MetalLB 세팅이슈.md
+#      - 쿠버-리디렉션이슈.md
+#      - 쿠버-퍼드 생성 연습.md
+#    - QEMU-KVM:
+#      - kvm containerd 디스크 문제 해결 방법.md
+#      - kvm 명령어.md
+#      - kvm 아이피 확인절차.md
+#  - 운영체제:
+#    - Linux:
+#      - linux-xrdp 설정.md
+#      - linux-자동완성기능.md
+#    - Ubuntu:
+#      - ubuntu desktop install.md
+#    - Windows:
+#      - powershell에서 디렉토리 트리보기.md
+#  - 웹 서버 및 리버스 프록시:
+#    - Certbot:
+#      - Let's encrypt.md
+#    - Nginx:
+#      - Nginx conf 옵션확인.md
+#      - Nginx Log 관리하기.md
+#      - Nginx 설정 테스트 및 재시작.md
+#  - 데이터베이스:
+#    - MySQL:
+#      - Mysql-설치.md
+#    - PostgreSQL:
+#      - PostgreSQL CLI로 설치하고 접속확인까지.md
+#      - PostgreSQL-설치.md
+#  - 검색 및 데이터 분석:
+#    - OpenSearch:
+#      - 오픈서치-knn설정.md
+#      - 오픈서치-대시보드 구성 요령.md
+#      - 오픈서치-설치.md
+#  - 자동화 및 워크플로우:
+#    - ArgoCD:
+#      - Argocd-성능개선.md
+#    - Jenkins:
+#      - 젠킨스-agent.md
+#      - 젠킨스-rebuild 후속작업.md
+#      - 젠킨스-슬랙.md
+#  - 모니터링 및 시각화:
+#    - Grafana:
+#      - grafana-panels 모음.md
+#    - Jconsole:
+#      - Jconsole to Local.md
+#    - Sampler:
+#      - sampler-설치.md
+#    - Scouter:
+#      - scouter-설치.md
+#    - Superset:
+#      - Superset을 Terraform Docker로 설치해보았다.md
+#  - 저장소 관리:
+#    - NEXUS:
+#      - NEXUS Disk 관리.md
+#      - NEXUS-설치.md
+#  - 클라우드:
+#    - AWS:
+#      - AWS EC2에 SSH 접속하기 위한 최소작업.md
+#      - AWS 다른나라 리전에서 한국사이트 접속.md
+#      - AWS-EKS 자격증명하기.md
+#  - IaC:
+#    - Terraform provisioner 사용방법.md
+#    - Terraform `user_data` 사용 및 로그확인.md
+#    - Terraform 변수 정의하기.md
+#    - Terraform 설치 후 테스트.md
+#  - 기타:
+#    - 내소개:
+#      - 내 소개.md
+#    - 블로그:
+#      - 블로그 호스팅.md
+#    - 생각:
+#      - 스토리 포인트는 무의미하다의 글.md
+#      - 옳은 종류의 고집.md
+#    - 옵시디언:
+#      - 플러그인 - Execute Code.md
+#    - 추천글:
+#      - 갈때를 아는 방법.md
+#    - 학습:
+#      - 내가 학습한 워크플로우.md
+#  - Blog:
+#    - blog/index.md
+#    - Posts
