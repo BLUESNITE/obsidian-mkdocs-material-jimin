@@ -53,9 +53,12 @@
       {% include "partials/search.html" %}
     {% endif %}
     {% if config.repo_url %}
+      {#- 주석:깃 정보 및 링크 -#}
+      {#- 
       <div class="md-header__source">
         {% include "partials/source.html" %}
       </div>
+      -#}
     {% endif %}
   </nav>
   {% if "navigation.tabs.sticky" in features %}

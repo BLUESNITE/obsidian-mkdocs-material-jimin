@@ -109,6 +109,8 @@
     </div>
     <div data-md-component="announce">
       {% if self.announce() %}
+      {#- 주석:최상단배너 -#}
+      {#-
         <aside class="md-banner">
           <div class="md-banner__inner md-grid md-typeset">
             {% if "announce.dismiss" in features %}
@@ -123,6 +125,7 @@
             {% include "partials/javascripts/announce.html" %}
           {% endif %}
         </aside>
+        -#}
       {% endif %}
     </div>
     {% if config.extra.version %}

@@ -19,19 +19,22 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
+# 주석:좌상단 텍스트
+# site_name: Material for MkDocs
+site_name: 나의 해방 일지
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
+  나의 작은 해방 일지, 내가 해방되는 그날까지 ... 
+# Write your documentation in Markdown and create a professional static site in
+# minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
 repo_name: squidfunk/mkdocs-material
 repo_url: https://github.com/squidfunk/mkdocs-material
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2024 Martin Donath
+copyright: Copyright &copy; 2023 - 2024 Jeong Ji Min
 
 # Configuration
 theme:
@@ -120,16 +123,17 @@ extra:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
+    # 주석:최하단 어플리케이션 아이콘
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
+      link: https://github.com/
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+      link: https://hub.docker.com/
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
+      link: https://pypi.org/
     - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
+      link: https://fosstodon.org/
     - icon: fontawesome/brands/x-twitter
-      link: https://x.com/squidfunk
+      link: https://x.com/
 
 # Extensions
 markdown_extensions:
