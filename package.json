@@ -24,6 +24,7 @@
     "url": "https://github.com/squidfunk/mkdocs-material.git"
   },
   "scripts": {
+    "localhost": "python3.11 -m mkdocs serve",
     "build": "rimraf material && ts-node -T tools/build --optimize",
     "build:all": "rimraf material && ts-node -T tools/build --all --optimize",
     "build:dirty": "ts-node -T tools/build --dirty",
@@ -48,6 +49,7 @@
     "fuzzaldrin-plus": "^0.6.0",
     "lunr": "^2.3.9",
     "lunr-languages": "^1.14.0",
+    "mkdocs-material": "file:",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {

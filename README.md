@@ -1,9 +1,8 @@
-<p align="center">
+<!-- <p align="center">
   <a href="https://squidfunk.github.io/mkdocs-material/">
     <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
   </a>
 </p>
-
 <p align="center">
   <strong>
     A powerful documentation framework on top of
@@ -129,9 +128,11 @@
   <a href="https://neptune.ai/" target=_blank><img
     src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-neptune-ai.png" height="58"
   /></a>
+ -->
   <!-- <a href="https://cash.app/" target=_blank><img
     src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-cashapp.png" height="58"
   /></a> -->
+  <!-- 
   <a href="https://rackn.com/" target=_blank><img
     src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-rackn.png" height="58"
   /></a>
@@ -332,3 +333,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
+-->
