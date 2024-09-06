@@ -1,3 +1,6 @@
+<!--                    -->
+<!-- README.md -->
+<!--                    -->
 <!-- <p align="center">
   <a href="https://squidfunk.github.io/mkdocs-material/">
     <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
@@ -333,4 +336,149 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
+-->
+<!--                    -->
+<!-- CODE_OF_CONDUCT.md -->
+<!--                    -->
+<!--                    
+# Contributor Covenant Code of Conduct
+
+## Our Pledge
+
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
+
+## Our Standards
+
+Examples of behavior that contributes to creating a positive environment include:
+
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for our community
+* Showing empathy towards other community members
+
+Examples of unacceptable behavior by participants include:
+
+* The use of sexualized language or imagery and unwelcome sexual attention or
+  advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+
+## Our Responsibilities
+
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, or to ban temporarily or permanently any
+contributor for other behaviors that they deem inappropriate, threatening,
+offensive, or harmful.
+
+## Scope
+
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team privately at hello@squidfunk.com. The
+project team will review and investigate all complaints, and will respond in a
+way that it deems appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an
+incident. Further details of specific enforcement policies may be posted
+separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
+-->
+<!--                    -->
+<!-- CONTRIBUTING.md -->
+<!--                    -->
+<!--                    
+# Contributing
+
+Material for MkDocs is an actively maintained and constantly improved project
+that serves a diverse user base with varying backgrounds and needs. In order to
+effectively address the needs of all our users, evaluate change requests, and
+fix bugs, we maintainers need to put in a lot of work. We have devoted
+significant effort to creating better templates for our issue tracker,
+optimizing the processes for our users to report bugs, request features or
+changes, contribute to the project, or exchange with our community.
+
+Given the wealth of valuable knowledge contained in numerous issues and
+discussions, we consider our [issue tracker] and [discussion board] to serve as
+a crucial __knowledge base__ that is an important addition to our [documentation]
+and brings value to both new and experienced users of Material for MkDocs.
+
+  [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
+  [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
+  [documentation]: https://squidfunk.github.io/mkdocs-material/
+
+## How to contribute
+
+### Creating an issue
+
+-   #### [Report a bug]
+
+    __Something is not working?__ Report a bug in Material for MkDocs by
+    creating an issue with a reproduction
+
+-   #### [Report a docs issue]
+
+    __Missing information in our docs?__ Report missing information or
+    potential inconsistencies in our documentation
+
+-   #### [Request a change]
+
+    __Want to submit an idea?__ Propose a change, feature request, or
+    suggest an improvement
+
+-   #### [Ask a question]
+
+    __Have a question or need help?__ Ask a question on our [discussion board]
+    and get in touch with our community
+
+### Contributing
+
+-   #### [Add a translation]
+
+    __Missing support for your language?__ Add missing translations for a new
+    or already supported language
+
+-   #### [Create a pull request]
+
+    __Want to create a pull request?__ Learn how to create a comprehensive
+    and useful pull request (PR)s
+
+  [Report a bug]: docs/contributing/reporting-a-bug.md
+  [Report a docs issue]: docs/contributing/reporting-a-docs-issue.md
+  [Request a change]: docs/contributing/requesting-a-change.md
+  [Ask a question]: https://github.com/squidfunk/mkdocs-material/discussions
+  [Add a translation]: docs/contributing/adding-translations
+  [Create a pull request]: docs/contributing/making-a-pull-request.md
 -->
