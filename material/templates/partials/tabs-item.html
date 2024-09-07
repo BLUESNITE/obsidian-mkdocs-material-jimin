@@ -21,6 +21,11 @@
     {% else %}
       <li class="{{ class }}">
         <a href="{{ first.url | url }}" class="md-tabs__link">
+          {#- 주석:상단메뉴 -#}
+          {#- 
+            {% set modified_title = ref.title | replace('1. ', '') %}
+            {{ render_content(first, ref | dict(title=modified_title)) }}
+          -#}
           {{ render_content(first, ref) }}
         </a>
       </li>

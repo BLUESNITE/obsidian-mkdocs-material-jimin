@@ -39,6 +39,7 @@ copyright: Copyright &copy; 2023 - 2024 Jeong Ji Min
 # Configuration
 theme:
   name: material
+  language: ko
   custom_dir: material/overrides
   features:
     - announce.dismiss
@@ -51,23 +52,24 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand # 네비게이션확장
     - navigation.footer
-    - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    - navigation.indexes # 폴더 인덱스 카테고리 표기
+    - navigation.instant # 인스턴트 프리페치
+    # - navigation.instant.prefetch # 인스턴트 프리페치 (별로인듯)
+    - navigation.instant.progress # 인스턴트 진행률 표시기
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    #- toc.integrate # 우측 목차 네비로 병합
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -98,7 +100,8 @@ theme:
 
 # Plugins
 plugins:
-  - blog
+  # - regex_filter
+  #- blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - mkdocs-simple-hooks:
@@ -142,6 +145,7 @@ markdown_extensions:
   - custom_extensions.obsidian_callouts
   - custom_extensions.obsidian_images
   - custom_extensions.obsidian_root_images
+  # - custom_extensions.regex_filter
   - abbr
   - admonition
   - attr_list
