@@ -25,27 +25,27 @@
 }
 
 .dark-text-custom1 {
-  color: #1a73e8; /* 새파란1 */
+  color: #1a73e8 !important; /* 새파란1 */
 }
 
 .dark-text-custom2 {
-  color: #1b66e8; /* 새파란2 */
+  color: #1b66e8 !important; /* 새파란2 */
 }
 
 .dark-text-custom3 {
-  color: #1c5be8; /* 새파란3 */
+  color: #1c5be8 !important; /* 새파란3 */
 }
 
 .dark-text-custom4 {
-  color: #1a6fe8; /* 새파란4 */
+  color: #1a6fe8 !important; /* 새파란4 */
 }
 
 .dark-text-custom5 {
-  color: #3d5f7e;
+  color: #3d5f7e !important;
 }
 
 .dark-text-tertiary {
-  color: #84a59d;
+  color: #84a59d !important;
 }
 
 .dark-text-highlight {
@@ -70,7 +70,7 @@ padding
 */
 /* Padding Utilities */
 .p-0 {
-    padding: 0px;
+  padding: 0px;
 }
 .px-0 {
   padding-left: 0px;
