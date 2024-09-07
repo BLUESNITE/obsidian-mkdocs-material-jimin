@@ -21,10 +21,10 @@
     {% else %}
       <li class="{{ class }}">
         <a href="{{ first.url | url }}" class="md-tabs__link">
+          <span class="first-hidden-text" data-title="{{ ref.title }}">
           {#- 주석:상단메뉴 -#}
-          {{ remove_numbering(ref.title) }}
-
-          {{ render_content(first, ref) }}
+          {#- {{ render_content(first, ref) }}  -#}
+          </span>
         </a>
       </li>
     {% endif %}

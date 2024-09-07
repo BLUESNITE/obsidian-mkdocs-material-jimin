@@ -1,3 +1,13 @@
+
+.first-hidden-text {
+    visibility: hidden;
+  }
+  
+.first-hidden-text::after {
+    content: attr(data-title); /* 숫자와 점을 제외한 내용을 커스터마이징 */
+    visibility: visible; /* 새롭게 표시할 텍스트만 표시 */
+}
+
 .admonition {
     margin: 1.5625em 0;
     padding: 0 .6rem;

@@ -100,10 +100,10 @@ theme:
 
 # Plugins
 plugins:
-  # - regex_filter
   #- blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - regex_filter
   # - mkdocs-simple-hooks:
       # hooks:
         # on_config: "hooks:on_config"
