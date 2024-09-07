@@ -8,10 +8,15 @@
   {% set class = class ~ " md-header--shadow" %}
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
+  <!-- <link rel="stylesheet" href="{{ 'path/to/your/styles.css' | url }}"> -->
+
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <!-- 주석:로고제거 -->
+    <!-- 
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
     </a>
+     -->
     <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}
@@ -19,9 +24,12 @@
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            {{ config.site_name }}
-          </span>
+          <!-- 주석:좌상단 텍스트 -->
+          <a class="mt-2" href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}">
+            <span class="md-ellipsis dark-text-secondary">
+              {{ config.site_name }}
+            </span> 
+          </a>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">

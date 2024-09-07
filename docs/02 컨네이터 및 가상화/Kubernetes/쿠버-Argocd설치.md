@@ -124,6 +124,7 @@ argocd login [argocd url] --grpc-web --insecure
 username
 password
 
+argocd login 192.168.1.254:10031 --grpc-web --insecure
 argocd login argocd-stg.abcde.com --grpc-web --insecure
 
 docker login docker-stg.abcde.com  
