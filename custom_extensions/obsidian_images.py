@@ -6,7 +6,7 @@ from xml.etree import ElementTree as etree
 class ObsidianImageProcessor(InlineProcessor):
     def handleMatch(self, m, data):
         image_name = m.group(1)
-        
+
         # 이미지 경로를 적절히 변환
         # 예: 'images/' 디렉토리에 이미지가 있다고 가정
         image_path = f"_topdown/{image_name}"

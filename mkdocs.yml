@@ -140,6 +140,7 @@ extra:
 markdown_extensions:
   - custom_extensions.obsidian_callouts
   - custom_extensions.obsidian_images
+  - custom_extensions.obsidian_root_images
   - abbr
   - admonition
   - attr_list

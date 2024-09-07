@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+# 기억의 해방 - 개인위키
+@[[drama|image_without_text.png||]]
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+- 집중 학습 기술 스택
 
-## Commands
+@[[icons|terraform-icon-144x144.png|#ffffff|90px|90px|p-2]]
+@[[icons|server-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|icons8-쿠버네티스-144.png|#ffffff|90px|90px|p-2]]
+@[[icons|icons8-부두-노동자-144.png|#ffffff|90px|90px|p-2]]
+@[[icons|argo-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|jenkins-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|linux-icon-144x144.svg|#ffffff|90px|90px|p-2]]
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- 다루어본 기술 스택
 
-## Project layout
+@[[icons|nginx-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|search-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|spring-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|lock-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|scouter-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|postgres-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|nextjs-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|openshift-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|mongodb-icon-144x144.svg|#ffffff|90px|90px|p-2]]
+@[[icons|python-icon-144x144.svg|#ffffff|90px|90px|p-2]]
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+부족한 내용이더라도 공유하고 기록하고자 시작하였습니다.
+
+끈질긴 엔지니어를 꿈꾸고, Kubernetes의 생태계에 취해서 일하고 있습니다.
+
+그리고 모든 issue를 해결해주는데 재미를 느낍니다.
+
+방문에 감사합니다.
