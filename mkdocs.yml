@@ -23,7 +23,7 @@
 # site_name: Material for MkDocs
 site_name: 나의 해방 일지
 site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_author: Jeong Ji Min
 site_description: >-
   나의 작은 해방 일지, 내가 해방되는 그날까지 ... 
 # Write your documentation in Markdown and create a professional static site in
@@ -87,10 +87,12 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+  #주석:폰트
   font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
+    text: Sans Pro
+    code: Sans Pro
+  #주석:파비콘
+  favicon: stylesheets/assets/icon2.png
   icon:
     logo: logo
 
@@ -102,7 +104,6 @@ plugins:
   # - mkdocs-simple-hooks:
       # hooks:
         # on_config: "hooks:on_config"
-
 #  - minify:
 #      minify_html: true
 
@@ -298,222 +299,3 @@ nav:
       - 갈때를 아는 방법: 99 기타/추천글/갈때를 아는 방법.md
     - 학습:
       - 내가 학습한 워크플로우: 99 기타/학습/내가 학습한 워크플로우.md
-  - Blog:
-    - blog/index.md
-    - Posts: blog/posts/index.md
-#nav:
-#  - Home: index.md
-#  - Getting started:
-#    - Installation: getting-started.md
-#    - Creating your site: creating-your-site.md
-#    - Publishing your site: publishing-your-site.md
-#    - Customization: customization.md
-#    - Conventions: conventions.md
-#    - Browser support: browser-support.md
-#    - Enterprise feedback: enterprise-support.md
-#    - Philosophy: philosophy.md
-#    - Alternatives: alternatives.md
-#    - License: license.md
-#    - Tutorials:
-#      - tutorials/index.md
-#      - "Blogs":
-#        - tutorials/blogs/basic.md
-#        - tutorials/blogs/navigation.md
-#        - tutorials/blogs/engage.md
-#      - "Social cards":
-#        - tutorials/social/basic.md
-#        - tutorials/social/custom.md
-#    - Changelog:
-#      - changelog/index.md
-#      - How to upgrade: upgrade.md
-#  - Setup:
-#    - setup/index.md
-#    - Changing the colors: setup/changing-the-colors.md
-#    - Changing the fonts: setup/changing-the-fonts.md
-#    - Changing the language: setup/changing-the-language.md
-#    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-#    - Ensuring data privacy: setup/ensuring-data-privacy.md
-#    - Setting up navigation: setup/setting-up-navigation.md
-#    - Setting up site search: setup/setting-up-site-search.md
-#    - Setting up site analytics: setup/setting-up-site-analytics.md
-#    - Setting up social cards: setup/setting-up-social-cards.md
-#    - Setting up a blog: setup/setting-up-a-blog.md
-#    - Setting up tags: setup/setting-up-tags.md
-#    - Setting up versioning: setup/setting-up-versioning.md
-#    - Setting up the header: setup/setting-up-the-header.md
-#    - Setting up the footer: setup/setting-up-the-footer.md
-#    - Adding a git repository: setup/adding-a-git-repository.md
-#    - Adding a comment system: setup/adding-a-comment-system.md
-#    - Building an optimized site: setup/building-an-optimized-site.md
-#    - Building for offline usage: setup/building-for-offline-usage.md
-#    - Extensions:
-#      - setup/extensions/index.md
-#      - Python Markdown: setup/extensions/python-markdown.md
-#      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-#  - Plugins:
-#    - plugins/index.md
-#    - Blog: plugins/blog.md
-#    - Group: plugins/group.md
-#    - Info: plugins/info.md
-#    - Meta: plugins/meta.md
-#    - Offline: plugins/offline.md
-#    - Optimize: plugins/optimize.md
-#    - Privacy: plugins/privacy.md
-#    - Projects: plugins/projects.md
-#    - Search: plugins/search.md
-#    - Social: plugins/social.md
-#    - Tags: plugins/tags.md
-#    - Typeset: plugins/typeset.md
-#    - Requirements:
-#      - Image processing: plugins/requirements/image-processing.md
-#      - Caching: plugins/requirements/caching.md
-#  - Reference:
-#    - reference/index.md
-#    - Admonitions: reference/admonitions.md
-#    - Annotations: reference/annotations.md
-#    - Buttons: reference/buttons.md
-#    - Code blocks: reference/code-blocks.md
-#    - Content tabs: reference/content-tabs.md
-#    - Data tables: reference/data-tables.md
-#    - Diagrams: reference/diagrams.md
-#    - Footnotes: reference/footnotes.md
-#    - Formatting: reference/formatting.md
-#    - Grids: reference/grids.md
-#    - Icons, Emojis: reference/icons-emojis.md
-#    - Images: reference/images.md
-#    - Lists: reference/lists.md
-#    - Math: reference/math.md
-#    - Tooltips: reference/tooltips.md
-#  - Insiders:
-#    - insiders/index.md
-#    - Why sponsor us: insiders/why-sponsor-us.md
-#    - What's in it for you: insiders/benefits.md
-#    - Who is sponsoring: insiders/our-sponsors.md
-#    - Sponsoring tiers: insiders/sponsoring-tiers.md
-#    - How to sponsor: insiders/how-to-sponsor.md
-#    - Additional information:
-#      - Payment and billing: insiders/payment-and-billing.md
-#      - Access management: insiders/access-management.md
-#      - Runtime and cancellation: insiders/runtime-and-cancellation.md
-#      - Privacy: insiders/privacy.md
-#      - License: insiders/license.md
-#      - Support: support.md
-#    - Using Insiders:
-#      - Getting started: insiders/getting-started.md
-#    - Changelog:
-#      - insiders/changelog/index.md
-#      - How to upgrade: insiders/upgrade.md
-#  - Community:
-#    - Contributing:
-#      - contributing/index.md
-#      - Reporting a bug: contributing/reporting-a-bug.md
-#      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-#      - Requesting a change: contributing/requesting-a-change.md
-#      - Adding translations: contributing/adding-translations.md
-#      - Making a pull request: contributing/making-a-pull-request.md
-#      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-#    - Guides:
-#      - Creating a reproduction: guides/creating-a-reproduction.md
-#    - Community experts program:
-#      - insiders/community-experts-program/index.md
-#  - Blog:
-#    - blog/index.md
-
-
-# Page tree
-#nav:
-#  - Home: index.md
-#  - 코드 관리 도구:
-#    - GitLab:
-#      - gitlab 서로다른 레포지토리 병합 미러링.md
-#    - SonarQube:
-#      - SonarQube 설치 및 통합 가이드.md
-#  - 컨테이너 및 가상화:
-#    - Docker:
-#      - 도커 설치.md
-#    - Kubernetes:
-#      - 쿠버-Argocd설치.md
-#      - 쿠버-CNI의 종류.md
-#      - 쿠버-Istio gateway 설정.md
-#      - 쿠버-MetalLB 세팅이슈.md
-#      - 쿠버-리디렉션이슈.md
-#      - 쿠버-퍼드 생성 연습.md
-#    - QEMU-KVM:
-#      - kvm containerd 디스크 문제 해결 방법.md
-#      - kvm 명령어.md
-#      - kvm 아이피 확인절차.md
-#  - 운영체제:
-#    - Linux:
-#      - linux-xrdp 설정.md
-#      - linux-자동완성기능.md
-#    - Ubuntu:
-#      - ubuntu desktop install.md
-#    - Windows:
-#      - powershell에서 디렉토리 트리보기.md
-#  - 웹 서버 및 리버스 프록시:
-#    - Certbot:
-#      - Let's encrypt.md
-#    - Nginx:
-#      - Nginx conf 옵션확인.md
-#      - Nginx Log 관리하기.md
-#      - Nginx 설정 테스트 및 재시작.md
-#  - 데이터베이스:
-#    - MySQL:
-#      - Mysql-설치.md
-#    - PostgreSQL:
-#      - PostgreSQL CLI로 설치하고 접속확인까지.md
-#      - PostgreSQL-설치.md
-#  - 검색 및 데이터 분석:
-#    - OpenSearch:
-#      - 오픈서치-knn설정.md
-#      - 오픈서치-대시보드 구성 요령.md
-#      - 오픈서치-설치.md
-#  - 자동화 및 워크플로우:
-#    - ArgoCD:
-#      - Argocd-성능개선.md
-#    - Jenkins:
-#      - 젠킨스-agent.md
-#      - 젠킨스-rebuild 후속작업.md
-#      - 젠킨스-슬랙.md
-#  - 모니터링 및 시각화:
-#    - Grafana:
-#      - grafana-panels 모음.md
-#    - Jconsole:
-#      - Jconsole to Local.md
-#    - Sampler:
-#      - sampler-설치.md
-#    - Scouter:
-#      - scouter-설치.md
-#    - Superset:
-#      - Superset을 Terraform Docker로 설치해보았다.md
-#  - 저장소 관리:
-#    - NEXUS:
-#      - NEXUS Disk 관리.md
-#      - NEXUS-설치.md
-#  - 클라우드:
-#    - AWS:
-#      - AWS EC2에 SSH 접속하기 위한 최소작업.md
-#      - AWS 다른나라 리전에서 한국사이트 접속.md
-#      - AWS-EKS 자격증명하기.md
-#  - IaC:
-#    - Terraform provisioner 사용방법.md
-#    - Terraform `user_data` 사용 및 로그확인.md
-#    - Terraform 변수 정의하기.md
-#    - Terraform 설치 후 테스트.md
-#  - 기타:
-#    - 내소개:
-#      - 내 소개.md
-#    - 블로그:
-#      - 블로그 호스팅.md
-#    - 생각:
-#      - 스토리 포인트는 무의미하다의 글.md
-#      - 옳은 종류의 고집.md
-#    - 옵시디언:
-#      - 플러그인 - Execute Code.md
-#    - 추천글:
-#      - 갈때를 아는 방법.md
-#    - 학습:
-#      - 내가 학습한 워크플로우.md
-#  - Blog:
-#    - blog/index.md
-#    - Posts
