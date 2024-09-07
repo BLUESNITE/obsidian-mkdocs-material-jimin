@@ -58,8 +58,8 @@ is_pruned = true %} {% endif %} {% endif %}
     <span class="md-nav__icon md-icon"></span>
   </label>
   {% else %} {% set index = indexes | first %} {% set class =
-  "md-nav__link--active" if index == page %}
-  <div class="md-nav__link md-nav__container">
+  "md-nav__link--active" if index == page %} {#- 주석:좌측1뎁스 -#}
+  <div class="md-nav__link md-nav__container dark-text-dark text-xs">
     <a href="{{ index.url | url }}" class="md-nav__link {{ class }}">
       {{ render_content(index, nav_item) }}
     </a>

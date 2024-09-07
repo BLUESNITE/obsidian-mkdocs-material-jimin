@@ -9,7 +9,11 @@ class = class ~ " md-tabs__item--active" %} {% endif %} {% if nav_item.children
 render(first, ref) }} {% else %}
 <li class="{{ class }}">
   <a href="{{ first.url | url }}" class="md-tabs__link">
-    <span class="first-hidden-text" data-first="{{ ref.title }}" data-title="">
+    <span
+      class="first-hidden-text font-bold"
+      data-first="{{ ref.title }}"
+      data-title=""
+    >
       {#- 주석:상단메뉴 -#} {#- {{ render_content(first, ref) }} -#}
     </span>
   </a>
