@@ -25,7 +25,7 @@ site_name: 나의 해방 일지
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Jeong Ji Min
 site_description: >-
-  나의 작은 해방 일지, 내가 해방되는 그날까지 ... 
+  나의 작은 해방 일지, 내가 해방되는 그날까지 ...
 # Write your documentation in Markdown and create a professional static site in
 # minutes – searchable, customizable, in 60+ languages, for all devices
 
@@ -64,7 +64,7 @@ theme:
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
-    
+
     - search.highlight
     - search.share
     - search.suggest
@@ -105,10 +105,13 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - regex_filter
   # - mkdocs-simple-hooks:
-      # hooks:
-        # on_config: "hooks:on_config"
+  # hooks:
+  # on_config: "hooks:on_config"
 #  - minify:
 #      minify_html: true
+
+extra_javascript:
+  - stylesheets/extra.js
 
 extra_css:
   - stylesheets/extra.css
@@ -200,94 +203,94 @@ not_in_nav: |
 nav:
   - Home: index.md
   - 1. 개발 및 배포 도구:
-    - 1. 개발 및 배포 도구/index.md
-    - argocd:
-      - Argocd-성능개선: 1. 개발 및 배포 도구/argocd/Argocd-성능개선.md
-    - docker:
-      - 도커 설치: 1. 개발 및 배포 도구/docker/도커 설치.md
-    - gitlab:
-      - gitlab 서로다른 레포지토리 병합 미러링: 1. 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
-    - jenkins:
-      - 젠킨스-agent: 1. 개발 및 배포 도구/jenkins/젠킨스-agent.md
-      - 젠킨스-rebuild 후속작업: 1. 개발 및 배포 도구/jenkins/젠킨스-rebuild 후속작업.md
-      - 젠킨스-슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스-슬랙.md
-    - kubernetes:
-      - 쿠버-Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버-Argocd설치.md
-      - 쿠버-CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버-CNI의 종류.md
-      - 쿠버-Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버-Istio gateway 설정.md
-      - 쿠버-MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-MetalLB 세팅이슈.md
-      - 쿠버-리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-리디렉션이슈.md
-      - 쿠버-퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버-퍼드 생성 연습.md
-    - nexus:
-      - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
-      - NEXUS-설치: 1. 개발 및 배포 도구/nexus/NEXUS-설치.md
-    - sonarqube:
-      - SonarQube 설치 및 통합 가이드: 1. 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
+      - 1. 개발 및 배포 도구/index.md
+      - argocd:
+          - Argocd-성능개선: 1. 개발 및 배포 도구/argocd/Argocd-성능개선.md
+      - docker:
+          - 도커 설치: 1. 개발 및 배포 도구/docker/도커 설치.md
+      - gitlab:
+          - gitlab 서로다른 레포지토리 병합 미러링: 1. 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
+      - jenkins:
+          - 젠킨스-agent: 1. 개발 및 배포 도구/jenkins/젠킨스-agent.md
+          - 젠킨스-rebuild 후속작업: 1. 개발 및 배포 도구/jenkins/젠킨스-rebuild 후속작업.md
+          - 젠킨스-슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스-슬랙.md
+      - kubernetes:
+          - 쿠버-Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버-Argocd설치.md
+          - 쿠버-CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버-CNI의 종류.md
+          - 쿠버-Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버-Istio gateway 설정.md
+          - 쿠버-MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-MetalLB 세팅이슈.md
+          - 쿠버-리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-리디렉션이슈.md
+          - 쿠버-퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버-퍼드 생성 연습.md
+      - nexus:
+          - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
+          - NEXUS-설치: 1. 개발 및 배포 도구/nexus/NEXUS-설치.md
+      - sonarqube:
+          - SonarQube 설치 및 통합 가이드: 1. 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
   - 2. 운영체제 및 서버 관리:
-    - 2. 운영체제 및 서버 관리/index.md
-    - certbot:
-      - Let's encrypt: 2. 운영체제 및 서버 관리/certbot/Let's encrypt.md
-    - linux:
-      - linux-xrdp 설정: 2. 운영체제 및 서버 관리/linux/linux-xrdp 설정.md
-      - linux-자동완성기능: 2. 운영체제 및 서버 관리/linux/linux-자동완성기능.md
-    - nginx:
-      - Nginx conf 옵션확인: 2. 운영체제 및 서버 관리/nginx/Nginx conf 옵션확인.md
-      - Nginx Log 관리하기: 2. 운영체제 및 서버 관리/nginx/Nginx Log 관리하기.md
-      - Nginx 설정 테스트 및 재시작: 2. 운영체제 및 서버 관리/nginx/Nginx 설정 테스트 및 재시작.md
-    - qemu-kvm:
-      - kvm containerd 디스크 문제 해결 방법: 2. 운영체제 및 서버 관리/qemu-kvm/kvm containerd 디스크 문제 해결 방법.md
-      - kvm 명령어: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 명령어.md
-      - kvm 아이피 확인절차: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 아이피 확인절차.md
-    - ubuntu:
-      - ubuntu desktop install: 2. 운영체제 및 서버 관리/ubuntu/ubuntu desktop install.md
-    - window:
-      - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
+      - 2. 운영체제 및 서버 관리/index.md
+      - certbot:
+          - Let's encrypt: 2. 운영체제 및 서버 관리/certbot/Let's encrypt.md
+      - linux:
+          - linux-xrdp 설정: 2. 운영체제 및 서버 관리/linux/linux-xrdp 설정.md
+          - linux-자동완성기능: 2. 운영체제 및 서버 관리/linux/linux-자동완성기능.md
+      - nginx:
+          - Nginx conf 옵션확인: 2. 운영체제 및 서버 관리/nginx/Nginx conf 옵션확인.md
+          - Nginx Log 관리하기: 2. 운영체제 및 서버 관리/nginx/Nginx Log 관리하기.md
+          - Nginx 설정 테스트 및 재시작: 2. 운영체제 및 서버 관리/nginx/Nginx 설정 테스트 및 재시작.md
+      - qemu-kvm:
+          - kvm containerd 디스크 문제 해결 방법: 2. 운영체제 및 서버 관리/qemu-kvm/kvm containerd 디스크 문제 해결 방법.md
+          - kvm 명령어: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 명령어.md
+          - kvm 아이피 확인절차: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 아이피 확인절차.md
+      - ubuntu:
+          - ubuntu desktop install: 2. 운영체제 및 서버 관리/ubuntu/ubuntu desktop install.md
+      - window:
+          - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
   - 3. 데이터 관리:
-    - 3. 데이터 관리/index.md
-    - mysql:
-      - Mysql-설치: 3. 데이터 관리/mysql/Mysql-설치.md
-    - opensearch:
-      - 오픈서치-knn설정: 3. 데이터 관리/opensearch/오픈서치-knn설정.md
-      - 오픈서치-대시보드 구성 요령: 3. 데이터 관리/opensearch/오픈서치-대시보드 구성 요령.md
-      - 오픈서치-설치: 3. 데이터 관리/opensearch/오픈서치-설치.md
-    - postgres:
-      - PostgreSQL CLI로 설치하고 접속확인까지: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치하고 접속확인까지.md
-      - PostgreSQL-설치: 3. 데이터 관리/postgres/PostgreSQL-설치.md
+      - 3. 데이터 관리/index.md
+      - mysql:
+          - Mysql-설치: 3. 데이터 관리/mysql/Mysql-설치.md
+      - opensearch:
+          - 오픈서치-knn설정: 3. 데이터 관리/opensearch/오픈서치-knn설정.md
+          - 오픈서치-대시보드 구성 요령: 3. 데이터 관리/opensearch/오픈서치-대시보드 구성 요령.md
+          - 오픈서치-설치: 3. 데이터 관리/opensearch/오픈서치-설치.md
+      - postgres:
+          - PostgreSQL CLI로 설치하고 접속확인까지: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치하고 접속확인까지.md
+          - PostgreSQL-설치: 3. 데이터 관리/postgres/PostgreSQL-설치.md
   - 4. 모니터링 및 시각화:
-    - 4. 모니터링 및 시각화/index.md
-    - grafana:
-      - grafana-panels 모음: 4. 모니터링 및 시각화/grafana/grafana-panels 모음.md
-    - jconsole:
-      - Jconsole to Local: 4. 모니터링 및 시각화/jconsole/Jconsole to Local.md
-    - sampler:
-      - sampler-설치: 4. 모니터링 및 시각화/sampler/sampler-설치.md
-    - scouter:
-      - scouter-설치: 4. 모니터링 및 시각화/scouter/scouter-설치.md
-    - superset:
-      - Superset을 Terraform Docker로 설치해보았다: 4. 모니터링 및 시각화/superset/Superset을 Terraform Docker로 설치해보았다.md
+      - 4. 모니터링 및 시각화/index.md
+      - grafana:
+          - grafana-panels 모음: 4. 모니터링 및 시각화/grafana/grafana-panels 모음.md
+      - jconsole:
+          - Jconsole to Local: 4. 모니터링 및 시각화/jconsole/Jconsole to Local.md
+      - sampler:
+          - sampler-설치: 4. 모니터링 및 시각화/sampler/sampler-설치.md
+      - scouter:
+          - scouter-설치: 4. 모니터링 및 시각화/scouter/scouter-설치.md
+      - superset:
+          - Superset을 Terraform Docker로 설치해보았다: 4. 모니터링 및 시각화/superset/Superset을 Terraform Docker로 설치해보았다.md
   - 5. 클라우드 및 인프라:
-    - 5. 클라우드 및 인프라/index.md
-    - aws:
-      - AWS EC2에 SSH 접속하기 위한 최소작업: 5. 클라우드 및 인프라/aws/AWS EC2에 SSH 접속하기 위한 최소작업.md
-      - AWS 다른나라 리전에서 한국사이트 접속: 5. 클라우드 및 인프라/aws/AWS 다른나라 리전에서 한국사이트 접속.md
-      - AWS-EKS 자격증명하기: 5. 클라우드 및 인프라/aws/AWS-EKS 자격증명하기.md
-    - IaC:
-      - Terraform provisioner 사용방법: 5. 클라우드 및 인프라/IaC/Terraform provisioner 사용방법.md
-      - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라/IaC/Terraform `user_data` 사용 및 로그확인.md
-      - Terraform 변수 정의하기: 5. 클라우드 및 인프라/IaC/Terraform 변수 정의하기.md
-      - Terraform 설치 후 테스트: 5. 클라우드 및 인프라/IaC/Terraform 설치 후 테스트.md
+      - 5. 클라우드 및 인프라/index.md
+      - aws:
+          - AWS EC2에 SSH 접속하기 위한 최소작업: 5. 클라우드 및 인프라/aws/AWS EC2에 SSH 접속하기 위한 최소작업.md
+          - AWS 다른나라 리전에서 한국사이트 접속: 5. 클라우드 및 인프라/aws/AWS 다른나라 리전에서 한국사이트 접속.md
+          - AWS-EKS 자격증명하기: 5. 클라우드 및 인프라/aws/AWS-EKS 자격증명하기.md
+      - IaC:
+          - Terraform provisioner 사용방법: 5. 클라우드 및 인프라/IaC/Terraform provisioner 사용방법.md
+          - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라/IaC/Terraform `user_data` 사용 및 로그확인.md
+          - Terraform 변수 정의하기: 5. 클라우드 및 인프라/IaC/Terraform 변수 정의하기.md
+          - Terraform 설치 후 테스트: 5. 클라우드 및 인프라/IaC/Terraform 설치 후 테스트.md
   - 6. 개인 및 블로그 관리:
-    - 6. 개인 및 블로그 관리/index.md
-    - 내소개:
-      - 내 소개: 6. 개인 및 블로그 관리/내소개/내 소개.md
-    - 블로그:
-      - 블로그 호스팅: 6. 개인 및 블로그 관리/블로그/블로그 호스팅.md
-    - 생각:
-      - 스토리 포인트는 무의미하다의 글: 6. 개인 및 블로그 관리/생각/스토리 포인트는 무의미하다의 글.md
-      - 옳은 종류의 고집: 6. 개인 및 블로그 관리/생각/옳은 종류의 고집.md
-    - 옵시디언:
-      - 플러그인 - Execute Code: 6. 개인 및 블로그 관리/옵시디언/플러그인 - Execute Code.md
-    - 추천글:
-      - 갈때를 아는 방법: 6. 개인 및 블로그 관리/추천글/갈때를 아는 방법.md
-    - 학습:
-      - 내가 학습한 워크플로우: 6. 개인 및 블로그 관리/학습/내가 학습한 워크플로우.md
+      - 6. 개인 및 블로그 관리/index.md
+      - 내소개:
+          - 내 소개: 6. 개인 및 블로그 관리/내소개/내 소개.md
+      - 블로그:
+          - 블로그 호스팅: 6. 개인 및 블로그 관리/블로그/블로그 호스팅.md
+      - 생각:
+          - 스토리 포인트는 무의미하다의 글: 6. 개인 및 블로그 관리/생각/스토리 포인트는 무의미하다의 글.md
+          - 옳은 종류의 고집: 6. 개인 및 블로그 관리/생각/옳은 종류의 고집.md
+      - 옵시디언:
+          - 플러그인 - Execute Code: 6. 개인 및 블로그 관리/옵시디언/플러그인 - Execute Code.md
+      - 추천글:
+          - 갈때를 아는 방법: 6. 개인 및 블로그 관리/추천글/갈때를 아는 방법.md
+      - 학습:
+          - 내가 학습한 워크플로우: 6. 개인 및 블로그 관리/학습/내가 학습한 워크플로우.md
