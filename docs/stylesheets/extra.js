@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateDataTitles() {
     document.querySelectorAll(".first-hidden-text").forEach(function (element) {
-      let text = element.getAttribute("data-title");
+      let text = element.getAttribute("data-first");
       if (text) {
         let cleanedText = text.replace(/[0-9]+\.\s*/, ""); // 숫자와 점 제거
         element.setAttribute("data-title", cleanedText);
