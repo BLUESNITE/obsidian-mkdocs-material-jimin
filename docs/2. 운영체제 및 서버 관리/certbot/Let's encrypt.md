@@ -1,4 +1,5 @@
 ![[Pasted image 20240703152646.png]]
+
 #### **Let's Encrypt**
 
 Let's Encrypt를 사용하여 와일드카드 SSL 인증서를 생성해서 여러 하위 도메인에 대해 하나의 인증서를 사용할 수 있는 방법을 알아보겠습니다. 와일드카드 인증서를 사용하면 도메인의 여러 서브도메인에 대해 인증을 제공하므로 관리가 용이하고 유연성을 얻을 수 있습니다. 아래는 와일드카드 SSL 인증서를 생성하는 데 필요한 과정에대한 설명 입니다.
@@ -13,7 +14,7 @@ Let's Encrypt를 사용하여 와일드카드 SSL 인증서를 생성해서 여�
 
 와일드카드 인증서는 하나의 인증서로 여러 서브도메인을 보호할 수 있는 SSL 인증서입니다. 예를 들어, blue.com 도메인의 와일드카드 인증서를 생성하면 다음과 같은 서브도메인에서 사용 할 수 있습니다.
 
-- *.blue.com (예: sub.blue.com, argocd.blue.com, api.blue.com 등)
+- \*.blue.com (예: sub.blue.com, argocd.blue.com, api.blue.com 등)
 
 즉, 와일드카드 인증서를 사용하면 각 서브도메인마다 별도의 인증서를 발급받을 필요 없이 하나의 인증서로 사용 할 수 있습니다.
 
@@ -29,19 +30,21 @@ DNS-01 챌린지는 도메인 소유권을 증명하기 위한 방법 중 하나
 
 DNS-01 챌린지를 처음 접한다면 다소 어렵게 느껴질 수 있습니다. 특히, 여러 서브도메인을 설정해야 하는 경우 복잡할 수 있습니다. 그러나 기본적으로 제공된 지침을 따르고 DNS 관리 콘솔에서 정확히 설정하면 문제없이 인증서를 발급받을 수 있습니다.
 
-**3. Certbot** 
+**3. Certbot**
 
 Certbot은 Let's Encrypt에서 SSL 인증서를 자동으로 발급받고 갱신해주는 도구입니다. 특히, Certbot을 사용하면 와일드카드 인증서도 쉽게 발급받을 수 있습니다.
 
 #### **Quick Start (우분투환경)**
 
 **- 설치**
+
 ```shell
-sudo apt-get update  
+sudo apt-get update
 sudo apt-get install certbot
 ```
 
 **- 생성**
+
 ```shell
 sudo certbot certonly --manual --preferred-challenges=dns -d '*.example.com' -d 'example.com'
 ```
@@ -71,7 +74,7 @@ TXT 레코드 유형으로 설정 후 위 이미지에 Certbot이 와일드 카�
 
 링크 정보 ([https://toolbox.googleapps.com/apps/dig/#TXT](https://toolbox.googleapps.com/apps/dig/#TXT))
 
-일반적으로 레코드 정보를 수정 또는 생성한 후에 레코드의 상태만 INSYNC 확인 하면 되지만 반복적으로 실패한다면 전파 확인이 필수 적입니다. 
+일반적으로 레코드 정보를 수정 또는 생성한 후에 레코드의 상태만 INSYNC 확인 하면 되지만 반복적으로 실패한다면 전파 확인이 필수 적입니다.
 
 ![](https://blog.kakaocdn.net/dn/UKGWo/btsH7Ac6Fpy/MxWyNFzhsgTmhvQC32Jjw1/img.png)
 
@@ -120,29 +123,29 @@ docker run -it --rm --name certbot -p 7979:80 -v '/etc/nginx/volume-file/letsenc
 **- 사전 작업 expect 설치**
 
 ```
-sudo apt-get update -y  
-sudo apt-get install expect -y  
-##(권한부여)  
-chmod +x /etc/nginx/renew_cert.exp  
-##(실행)  
+sudo apt-get update -y
+sudo apt-get install expect -y
+##(권한부여)
+chmod +x /etc/nginx/renew_cert.exp
+##(실행)
 /etc/nginx/renew_cert.exp
 ```
 
 **- renew_cert.exp  작성**
 
 ```
-#!/usr/bin/expect -f  
-set timeout -1  
+#!/usr/bin/expect -f
+set timeout -1
 
-spawn docker run -it --rm --name certbot \  
-   -p 7979:80 \  
-   -v "/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt" \  
-   -v "/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt" \  
-   -v "/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com" \  
-   certbot/certbot certonly --manual --preferred-challenges dns -d "*.blue.com"  
+spawn docker run -it --rm --name certbot \
+   -p 7979:80 \
+   -v "/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt" \
+   -v "/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt" \
+   -v "/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com" \
+   certbot/certbot certonly --manual --preferred-challenges dns -d "*.blue.com"
 
-expect "What would you like to do?"  
-send "2\r"  
+expect "What would you like to do?"
+send "2\r"
 expect eof
 ```
 
@@ -151,4 +154,3 @@ expect eof
 이건 아직 고민중입니다.
 
 내장형이 아닌 관리를 하고 싶은데. 유력한 후보는 jenkins를 통해서 스케줄링하고 ssh 실행.
-

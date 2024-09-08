@@ -1,9 +1,8 @@
 > [!NOTE] Title
 > 호기심 200%로 설치해봄 / 쿠버네티스 모니터링
-> 
 
 ```Shell
-sudo wget https://github.com/sqshq/sampler/releases/download/v1.1.0/sampler-1.1.0-linux-amd64 -O /usr/local/bin/sampler  
+sudo wget https://github.com/sqshq/sampler/releases/download/v1.1.0/sampler-1.1.0-linux-amd64 -O /usr/local/bin/sampler
 sudo chmod +x /usr/local/bin/sampler
 sudo yum install alsa-lib-devel -y
 -- sudo apt install libasound2-dev
@@ -12,12 +11,13 @@ sudo yum install alsa-lib-devel -y
 ```shell
 sudo cd /usr/local/bin/sampler
 sudo sampler -c example.yml
-/usr/local/bin/sampler -c 
+/usr/local/bin/sampler -c
 sampler -c /home/tech/sampler/example.yml
 /usr/local/bin/sampler -c /home/tech/sampler/k8s-dev.yml
 ```
 
 > 쿠버 모니터링
+
 ```shell
 textboxes:
   - title: Kubernetes Services
@@ -38,6 +38,7 @@ textboxes:
 ```
 
 > 쿠버 모니터링
+
 ```shell
 runcharts:
   - title: K8S Node Ram Usage

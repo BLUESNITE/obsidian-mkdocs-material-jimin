@@ -1,5 +1,5 @@
->[!TIP] 그라파나 그려둔 panels를 backup하기 위해 작성
->각각의 Json 내용이 길기 때문에 제목과 동일하게 하단에 Json 추가 작성
+> [!TIP] 그라파나 그려둔 panels를 backup하기 위해 작성
+> 각각의 Json 내용이 길기 때문에 제목과 동일하게 하단에 Json 추가 작성
 
 ```json title:최근_사용자_활동
 {
@@ -39,9 +39,7 @@
   "options": {
     "reduceOptions": {
       "values": false,
-      "calcs": [
-        "lastNotNull"
-      ],
+      "calcs": ["lastNotNull"],
       "fields": ""
     },
     "orientation": "auto",
@@ -137,8 +135,8 @@
   "title": "최근 사용자 활동 (활성화된 Go 루틴 수)",
   "type": "bargauge"
 }
-
 ```
+
 ![[Pasted image 20240708155246.png]]
 
 ```json title:현재_활성화된_Java_스레드_수
@@ -300,6 +298,7 @@
   "type": "timeseries"
 }
 ```
+
 ![[Pasted image 20240708163547.png]]
 
 ```json title:쿠버네티스_워커노드_Virtual_Memory
@@ -467,6 +466,7 @@
   "type": "timeseries"
 }
 ```
+
 ![[Pasted image 20240708163604.png]]
 
 ```json title:어플리케이션_상태
@@ -507,9 +507,7 @@
   "options": {
     "reduceOptions": {
       "values": false,
-      "calcs": [
-        "lastNotNull"
-      ],
+      "calcs": ["lastNotNull"],
       "fields": ""
     },
     "orientation": "horizontal",
@@ -614,6 +612,7 @@
   "type": "stat"
 }
 ```
+
 ![[Pasted image 20240708163615.png]]
 
 ```json title:최근_5분간_쿠버네티스_워커노드_메모리_사용량
@@ -783,6 +782,7 @@
   "type": "timeseries"
 }
 ```
+
 ![[Pasted image 20240708163628.png]]
 
 ```json title:최근_5분간_메모리사용량_어플리케이션
@@ -951,6 +951,7 @@
   "type": "timeseries"
 }
 ```
+
 ![[Pasted image 20240708163639.png]]
 
 ```json title:최근_5분간_CPU사용량_어플리케이션
@@ -1118,5 +1119,7 @@
   "type": "timeseries"
 }
 ```
+
 ![[Pasted image 20240708163653.png]]
-___
+
+---

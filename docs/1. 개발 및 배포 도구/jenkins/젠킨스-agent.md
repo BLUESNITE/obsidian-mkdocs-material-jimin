@@ -1,15 +1,17 @@
 > [!NOTE] 젠킨스 에이전트
 > 젠킨스 slave 추가 구성 (젠킨스 전용용어 agent)
-> 
+>
 > ![[Pasted image 20240703153741.png]]
 
 > 도커로 키 생성 CLI
-``` Shell
+
+```Shell
 docker exec -it jenkins ssh-keygen -t rsa
 ```
 
 > 생성된 경로
-``` Shell
+
+```Shell
 /root/.ssh/
 
 (확인 내용 예시)
@@ -17,7 +19,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDeaz5BH6FlRQnDrGYOr9N................FqNT0
 ```
 
 > docker compose file
-``` Shell
+
+```Shell
 services:
   node:
     container_name: jenkins-slave01
@@ -35,35 +38,40 @@ services:
 docker exec -it <컨테이너명> which java
 ```
 
->출력문 : /opt/java/openjdk/bin/java 
+> 출력문 : /opt/java/openjdk/bin/java
 
 > [!NOTE] Jenkins에서 Slave Agent node 추가
-> 
+>
 > 노드 추가 (Slave-In Node)
+>
 > - Permanent Agent (선택)
->   
+>
 > 다음 페이지
+>
 > - Remote root directory : /var/jenkins_home
 > - Lables : slave
 > - Launch method : Launch agents via SSH
 > - Host : slave
 > - Credentials : <여기서 잠깐. 인증값 작업이 필요하다. 하단에 추가>
 > - Host Key Verification Strategy : Non verifying Verification Strategy
->   
-> ##### Save  
-> 
+>
+> ##### Save
+>
 > 잔여 작업으로 Java 경로를 지정해주어야 한다.
+>
 > - Node Properties에서 Tool Locations
-> 
+>
 > 근대 뭐가 없을 수 있다. 잠시 다른 메뉴로 넘어가야한다.
+>
 > - Jenkins 관리 -> Tools -> JDK install (JAVA_HOME 설정)
->   
+>
 > 정상 추가 되었다면 다시. Configure에서 Tool Locations에 보면 JDK가 추가되어있다.  
->    
+>
 
 > [!TIP] Jenkins master Credentials
-> 
+>
 > #### New credentials
+>
 > - Kind : SSH Username with pricate key
 > - Id and Username : jenkins
 > - Private Key : 직접입력 (시작 때 생성한 키)
@@ -72,7 +80,7 @@ docker exec -it <컨테이너명> which java
 
 > [!NOTE] 설정 적용
 > 내가 추가한 Agent Slave-In Node에 가서 Relaunch agent를 눌러보자.
-> 
+>
 > ![[Pasted image 20240703093959.png]]
 > ![[Pasted image 20240703094100.png]]
 
@@ -88,11 +96,13 @@ docker compose 파일의 host 개선과 인증키 세팅을 다시 한번씩.
 컨테이너 재생성 때문에 아무래도 키값이 달라졌나보다.
 
 > 이후 발생한 추가 오류
+
 ```shell
 파일에 대한 액세스 문제
 ```
 
 #### [최종 컴포즈 파일]
+
 ```shell
 services:
   jenkins:
@@ -138,7 +148,9 @@ services:
 ```
 
 #### [수동연결]
-*에이전트 컨테이너에서 수행하는 CLI 절차*
+
+_에이전트 컨테이너에서 수행하는 CLI 절차_
+
 ```
 apt update -y
 apt install curl
@@ -150,7 +162,8 @@ curl -sO http://192.168.2.246:8081/jnlpJars/agent.jar
 java -jar agent.jar -url http://192.168.2.246:8081/ -secret @secret-file -name "Slave-In Node 3" -workDir "/var/jenkins_home"
 ```
 
-*Compose 파일로 작성*
+_Compose 파일로 작성_
+
 ```
 services:
   node:
@@ -178,7 +191,8 @@ services:
       echo 'Running node.sh'"
 ```
 
-*실행 sh스크립트*
+_실행 sh스크립트_
+
 ```
 #!/bin/sh
 
@@ -216,13 +230,14 @@ echo "Finished node.sh script"
 ```
 
 > free swap
+
 ```
-sudo swapoff -a 
+sudo swapoff -a
 
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
 
-___ 
-- 참고 사이트
-[[docker] docker 환경에서 젠킨스(jenkins) master-slave 컨테이너 설정해서 ... (xmlangel.kr)](https://xmlangel.kr/posts/2022-09-04-docker-jenkins-salve)
+---
 
+- 참고 사이트
+  [[docker] docker 환경에서 젠킨스(jenkins) master-slave 컨테이너 설정해서 ... (xmlangel.kr)](https://xmlangel.kr/posts/2022-09-04-docker-jenkins-salve)

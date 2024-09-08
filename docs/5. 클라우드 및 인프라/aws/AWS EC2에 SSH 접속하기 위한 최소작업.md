@@ -1,13 +1,15 @@
 ### AWS EC2에 SSH 접속하기 위한 최소작업을 기록
 
-*최소한의 생성 목록*
+_최소한의 생성 목록_
+
 - VPC
 - SUBNET
 - SECURITY GROUP
 - ROUTE TALBE
 - INTERNET GW
 
-___ 
+---
+
 ![[Pasted image 20240725083232.png]]
 
 이 구조가 나오도록. VPC <-> 서브넷 <-> 라우팅 테이블 <-> 네트워크 IGW연결이 필요합니다.

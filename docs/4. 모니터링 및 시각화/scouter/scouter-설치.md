@@ -2,6 +2,7 @@
 > Scouter는 3가지 요소가 필요하다 호스트에이전트, 자바에이전트, 클라이언트
 
 > 서버
+
 ```shell
 services:
   scouter-server:
@@ -29,6 +30,7 @@ services:
 > 클라이언트
 
 > 자바에이전트 실행
+
 ```shell
 # FROM docker.dev.x2bee-tech.com/library/openjdk:17-jdk-alpine
 FROM openjdk:17-jdk-alpine
@@ -82,4 +84,3 @@ USER appuser
 #ENTRYPOINT java ${JAVA_OPTS} -jar /$APP_NAME
 ENTRYPOINT java -javaagent:/app/agent.java/scouter-agent-java.jar -Dadd-opensjava.base/java.lang=ALL-UNNAMED -Djdk.attach.allowAttachSelf=true -Dscouter.config=/app/agent.java/conf/scouter.conf -Dobj_name=${PRJ_NAME} ${JAVA_OPTS} -jar /app/${APP_NAME}
 ```
-

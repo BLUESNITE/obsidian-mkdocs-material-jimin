@@ -1,16 +1,18 @@
 > [!NOTE] 성능개선
 > 동기화 작업시 Argocd 동작시간이 너무 오래걸려서 찾게 되었다.
-> 
+>
 > (실제 커맨드라인)
 > argocd app sync ${appName} --project ${project} --strategy ${strategy}
 
 **ConfigMap 확인하기:**
-``` Shell
+
+```Shell
 kubectl get cm argocd-cm -n argocd -o yaml
 ```
 
 **ConfigMap 수정하기:**
-``` Shell
+
+```Shell
 apiVersion: v1
 data:
   url: https://argocd.dev.x2bee-tech.com
@@ -42,11 +44,13 @@ metadata:
 ```
 
 **Argocd sync 동기화 개선:**
-``` Shell
+
+```Shell
 argocd app sync ${appName} --revision HEAD --prune=true --force=true --dry-run=false --apply-out-of-sync-only=false --server-side=false --replace=false
 ```
 
 **Argocd 명령어 옵션 설명:**
+
 - `argocd app sync app-name`: `app-name` 애플리케이션 동기화
 - `--revision HEAD`: `HEAD` 리비전
 - `--prune=false`: Prune 작업을 비활성화
@@ -65,4 +69,3 @@ argocd app sync ${appName} --revision HEAD --prune=true --force=true --dry-run=f
 
 > [!NOTE] 참고
 > Jenkins에서 수행하는 Argo CD CLI 명령어가 의도대로 작동하는지 확인하고, 파이프라인에 추가[!!]
-
