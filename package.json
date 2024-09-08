@@ -25,6 +25,7 @@
   },
   "scripts": {
     "localhost": "python3.11 -m mkdocs serve",
+    "localhost:8080": "python3.11 -m mkdocs serve --dev-addr=0.0.0.0:8080",
     "build": "rimraf material && ts-node -T tools/build --optimize",
     "build:all": "rimraf material && ts-node -T tools/build --all --optimize",
     "build:dirty": "ts-node -T tools/build --dirty",
