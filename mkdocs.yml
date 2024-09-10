@@ -94,7 +94,8 @@ theme:
     text: Sans Pro
     code: Sans Pro
   #주석:파비콘
-  favicon: stylesheets/assets/icon2.png
+  # favicon: stylesheets/assets/icon2.png
+  favicon: stylesheets/assets/favicon10.png
   icon:
     logo: logo
 

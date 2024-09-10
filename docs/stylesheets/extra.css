@@ -1,3 +1,15 @@
+/* KyoboHand 폰트 불러오기 */
+@import url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff");
+
+/* 페이지 전체에 적용할 폰트 설정 */
+body {
+    font-family: 'KyoboHand', sans-serif;
+}
+
+/* 코드 블록에 적용할 폰트 설정 */
+code {
+    font-family: 'Courier New', monospace;
+}
 
 .first-hidden-text {
     visibility: hidden;
