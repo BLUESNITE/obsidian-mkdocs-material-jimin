@@ -363,6 +363,7 @@ pre {
   padding-right: 0.6rem;
 }
 [dir="ltr"] .md-typeset blockquote {
+  /* 주석:ltr */
   border-left: 0.2rem solid var(--md-default-fg-color--lighter);
 }
 [dir="rtl"] .md-typeset blockquote {
