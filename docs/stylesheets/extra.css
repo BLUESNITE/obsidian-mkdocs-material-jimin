@@ -9,12 +9,26 @@ blockquote p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     color: var(--md-warning-bg-color)
-    /* color: var(--md-code-hl-color); */
+}
+
+ul li {
+    color: #d4d4d4;
+    font-weight : 600;
 }
 
 p em {
     color: var(--md-warning-bg-color)
 }
+
+/* ol li ::marker { */
+    /* color: var(--md-warning-bg-color); */
+    /* unicode-bidi: isolate; */
+    /* font-variant-numeric: tabular-nums; */
+    /* text-transform: none; */
+    /* text-indent: 0px !important; */
+    /* text-align: start !important; */
+    /* text-align-last: start !important; */
+/* } */
 
 /* 페이지 전체에 적용할 폰트 설정 */
 body {
