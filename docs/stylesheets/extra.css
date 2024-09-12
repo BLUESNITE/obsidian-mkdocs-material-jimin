@@ -1,34 +1,20 @@
 /* KyoboHand 폰트 불러오기 */
 @import url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff");
 
-blockquote p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    color: var(--md-warning-bg-color)
+/* 옵시디언태그 > */
+.md-main .md-content p > strong {
+    color: var(--md-typeset-a-color);
 }
 
-ul li {
-    color: #d4d4d4;
-    font-weight : 600;
+/* 옵시디언태그 ** */
+.md-main .md-content blockquote > p {
+    color: var(--md-warning-bg-color);
 }
 
-p em {
-    color: var(--md-warning-bg-color)
+/* 옵시디언태그 * */
+.md-main .md-content p > em {
+    color: var(--md-code-hl-string-color);
 }
-
-/* ol li ::marker { */
-    /* color: var(--md-warning-bg-color); */
-    /* unicode-bidi: isolate; */
-    /* font-variant-numeric: tabular-nums; */
-    /* text-transform: none; */
-    /* text-indent: 0px !important; */
-    /* text-align: start !important; */
-    /* text-align-last: start !important; */
-/* } */
 
 /* 페이지 전체에 적용할 폰트 설정 */
 body {

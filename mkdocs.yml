@@ -214,6 +214,7 @@ nav:
           - 젠킨스-agent: 1. 개발 및 배포 도구/jenkins/젠킨스-agent.md
           - 젠킨스-rebuild 후속작업: 1. 개발 및 배포 도구/jenkins/젠킨스-rebuild 후속작업.md
           - 젠킨스-슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스-슬랙.md
+          - 젠킨스-Role-Based Authorization Strategy: 1. 개발 및 배포 도구/jenkins/젠킨스-Role-Based Authorization Strategy.md
       - kubernetes:
           - 쿠버-Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버-Argocd설치.md
           - 쿠버-CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버-CNI의 종류.md
