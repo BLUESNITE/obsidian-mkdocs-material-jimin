@@ -15,7 +15,18 @@
 .md-main .md-content p > em {
     color: var(--md-code-hl-string-color);
 }
-
+/*
+.md-main .md-content article > p {
+    font-size: 0.64rem;
+    all: unset;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+*/
 /* 페이지 전체에 적용할 폰트 설정 */
 body {
     font-family: 'KyoboHand', sans-serif;
