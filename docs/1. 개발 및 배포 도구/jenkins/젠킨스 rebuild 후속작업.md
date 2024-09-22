@@ -1,4 +1,4 @@
-#### [install cli]
+#### install cli
 
 ```
 cd /usr/local/bin/
@@ -9,6 +9,7 @@ argocd version
 ```
 
 > [!NOTE] 자동화가 필요해보임. 쉘스크립트 심어서 해결(?)
+> 방법은 귀찮아서 나중에 찾고 기록기록
 
 ```
 argocd login argocd-dev.abcde.com --grpc-web --insecure

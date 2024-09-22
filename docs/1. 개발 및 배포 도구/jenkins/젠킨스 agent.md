@@ -215,7 +215,7 @@ sudo usermod -aG docker jenkins
 sudo chmod 666 /var/run/docker.sock
 ```
 ___
-#### [수동연결]
+#### 수동연결
 *에이전트 컨테이너에서 수행하는 CLI 절차*
 ```
 apt update -y
