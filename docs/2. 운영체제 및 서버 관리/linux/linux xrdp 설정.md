@@ -1,4 +1,4 @@
-> XRDP 접속 가능하도록 설정 내용
+**XRDP 접속 가능하도록 설정 내용**
 
 ```Shell
 /etc/xrdp
@@ -14,14 +14,16 @@ exec /bin/sh /usr/bin/startxfce4
 위와 같이 수정하면 gnome 환경은 아니지만 xfce4 접속가능
 ```
 
-> XRDP 재실행
+**XRDP 재실행**
 
 ```Shell
 sudo systemctl restart xrdp
 ```
 
-> 윈도우 이슈 사항
+**윈도우 이슈 사항**
 
-만약 _윈도우 원격데스크톱으로 연결시 Gnome 연결이 안된다면._ 설정을 바꾸기 전에 다를 Tool의 RDP로 접속 시도를 해보자. 되는 경우가 있다.
+만약 _윈도우 원격데스크톱으로 연결시 Gnome 연결이 안된다면._ 
 
-나의 경우는 `MobaXterm RDP`로 해결하여 잘 사용하고있다.
+설정을 바꾸기 전에 다를 Tool의 RDP로 접속 시도를 해보자. 될 수도? 있다.
+
+내 경우는 `MobaXterm RDP`로 해결하여 잘 사용하고있다.

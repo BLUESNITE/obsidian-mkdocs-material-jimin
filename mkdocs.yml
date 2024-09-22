@@ -233,8 +233,8 @@ nav:
       - certbot:
           - Let's encrypt: 2. 운영체제 및 서버 관리/certbot/Let's encrypt.md
       - linux:
-          - linux-xrdp 설정: 2. 운영체제 및 서버 관리/linux/linux-xrdp 설정.md
-          - linux-자동완성기능: 2. 운영체제 및 서버 관리/linux/linux-자동완성기능.md
+          - linux xrdp 설정: 2. 운영체제 및 서버 관리/linux/linux xrdp 설정.md
+          - linux 자동완성기능: 2. 운영체제 및 서버 관리/linux/linux 자동완성기능.md
       - nginx:
           - Nginx conf 옵션확인: 2. 운영체제 및 서버 관리/nginx/Nginx conf 옵션확인.md
           - Nginx Log 관리하기: 2. 운영체제 및 서버 관리/nginx/Nginx Log 관리하기.md

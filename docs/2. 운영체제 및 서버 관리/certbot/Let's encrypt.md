@@ -1,10 +1,10 @@
 ![[Pasted image 20240703152646.png]]
 
-#### **Let's Encrypt**
+**Let's Encrypt**
 
 Let's Encrypt를 사용하여 와일드카드 SSL 인증서를 생성해서 여러 하위 도메인에 대해 하나의 인증서를 사용할 수 있는 방법을 알아보겠습니다. 와일드카드 인증서를 사용하면 도메인의 여러 서브도메인에 대해 인증을 제공하므로 관리가 용이하고 유연성을 얻을 수 있습니다. 아래는 와일드카드 SSL 인증서를 생성하는 데 필요한 과정에대한 설명 입니다.
 
-#### **와일드 카드 인증서 및 DNS-01 챌린지 쉽게 이해하기**
+**와일드 카드 인증서 및 DNS-01 챌린지 쉽게 이해하기**
 
 - 와일드 카드 인증서
 - DNS-01 챌린지
@@ -109,13 +109,21 @@ CNAME 전파를 위해 대기중
 **도커로 인증서 생성 동작**
 
 ```
-docker run -it --rm --name certbot -p 7979:80 -v '/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt' -v '/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt' -v '/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com' certbot/certbot certonly -d '*.blue.com' --manual --preferred-challenges dns
+docker run -it --rm --name certbot -p 7979:80 \
+-v '/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt' \
+-v '/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt' \
+-v '/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com' \
+certbot/certbot certonly -d '*.blue.com' --manual --preferred-challenges dns
 ```
 
 아래는 /etc/nginx에 볼륨을 연결하고 생성된 파일인 인증서 파일을 /etc/nginx/blue.com에 배치 시켰습니다.
 
 ```
-docker run -it --rm --name certbot -p 7979:80 -v '/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt' -v '/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt' -v '/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com' certbot/certbot certonly -d '*.blue.com' --manual --preferred-challenges dns
+docker run -it --rm --name certbot -p 7979:80 \
+-v '/etc/nginx/volume-file/letsencrypt:/etc/letsencrypt' \
+-v '/etc/nginx/volume-file/lib/letsencrypt:/var/lib/letsencrypt' \
+-v '/etc/nginx/volume-file/letsencrypt/archive/blue.com:/etc/nginx/blue.com' \
+certbot/certbot certonly -d '*.blue.com' --manual --preferred-challenges dns
 ```
 
 그 다음 작업으로 갱신 작업을 작성해 보겠습니다.
