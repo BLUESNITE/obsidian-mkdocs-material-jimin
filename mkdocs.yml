@@ -221,11 +221,11 @@ nav:
           - 쿠버 CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버 CNI의 종류.md
           - 쿠버 Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio gateway 설정.md
           - 쿠버 MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 세팅이슈.md
-          - 쿠버-리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-리디렉션이슈.md
-          - 쿠버-퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버-퍼드 생성 연습.md
+          - 쿠버 리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 리디렉션이슈.md
+          - 쿠버 퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 퍼드 생성 연습.md
       - nexus:
+          - NEXUS 설치: 1. 개발 및 배포 도구/nexus/NEXUS 설치.md
           - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
-          - NEXUS-설치: 1. 개발 및 배포 도구/nexus/NEXUS-설치.md
       - sonarqube:
           - SonarQube 설치 및 통합 가이드: 1. 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
   - 2. 운영체제 및 서버 관리:

@@ -1,6 +1,6 @@
 > [!ㄷㄷㄷ] docker compose file
 > 아래는 도커 컴포즈 파일이며,
->
+> 
 > web은 8081이 중복되어 8082로 변경 설정
 > docker-hosted는 5000번
 > (8085는 모름 … )
@@ -117,7 +117,6 @@ docker push 192.168.2.246:5000/onpremise/lotte-x2bee-api-common_stg:1.0
 ```
 
 ---
-
 ## 테스트 완료
 
 ---

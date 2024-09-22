@@ -58,6 +58,7 @@ done
 ```
 
 실행결과 문제의 컨테이너는 _Nexus3_
+
 ![[Pasted image 20240823083641.png]]
 
 #### Nexus Blob Stores
