@@ -205,13 +205,14 @@ nav:
   - 1. 개발 및 배포 도구:
       - 1. 개발 및 배포 도구/index.md
       - argocd:
-          - Argocd-성능개선: 1. 개발 및 배포 도구/argocd/Argocd-성능개선.md
+          - Argocd 성능개선: 1. 개발 및 배포 도구/argocd/Argocd-성능개선.md
       - docker:
           - 도커 설치: 1. 개발 및 배포 도구/docker/도커 설치.md
+          - 도커 사용을 편리하게: 1. 개발 및 배포 도구/docker/도커 사용을 편리하게.md
       - gitlab:
           - gitlab 서로다른 레포지토리 병합 미러링: 1. 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
       - jenkins:
-          - 젠킨스-agent: 1. 개발 및 배포 도구/jenkins/젠킨스-agent.md
+          - 젠킨스 agent: 1. 개발 및 배포 도구/jenkins/젠킨스 agent.md
           - 젠킨스-rebuild 후속작업: 1. 개발 및 배포 도구/jenkins/젠킨스-rebuild 후속작업.md
           - 젠킨스-슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스-슬랙.md
           - 젠킨스-Role-Based Authorization Strategy: 1. 개발 및 배포 도구/jenkins/젠킨스-Role-Based Authorization Strategy.md
