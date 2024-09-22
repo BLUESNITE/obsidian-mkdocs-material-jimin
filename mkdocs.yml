@@ -260,6 +260,8 @@ nav:
       - postgres:
           - PostgreSQL 설치: 3. 데이터 관리/postgres/PostgreSQL 설치.md
           - PostgreSQL CLI로 설치: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치.md
+      - qdrant:
+          - Qdrant 설치: 3. 데이터 관리/qdrant/Qdrant 설치.md
   - 4. 모니터링 및 시각화:
       - 4. 모니터링 및 시각화/index.md
       - grafana:
