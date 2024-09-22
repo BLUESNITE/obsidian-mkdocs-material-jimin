@@ -1,6 +1,6 @@
 # 기억의 해방 - 개인위키
 
-@[[drama|image_without_text.png||]]
+@[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
 
 - 집중 학습 기술 스택
 

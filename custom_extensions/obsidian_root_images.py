@@ -1,4 +1,5 @@
 import re
+import random
 from markdown.extensions import Extension
 from markdown.inlinepatterns import InlineProcessor
 from xml.etree import ElementTree as etree
@@ -7,7 +8,9 @@ class ObsidianImageProcessor(InlineProcessor):
     def handleMatch(self, m, data):
         image_data = m.group(1).split('|')
         image_root = image_data[0]
-        image_name = image_data[1]
+        image_names = image_data[1].split(',')  # 이미지 이름을 ','로 구분하여 배열로 만듦
+        image_name = random.choice(image_names)  # 배열에서 랜덤으로 하나의 이미지를 선택
+        
         image_path = f"stylesheets/_topdown/{image_root}/{image_name}"
 
         # 옵션이 있는 경우 처리
