@@ -3,6 +3,7 @@
 
 /* 옵시디언태그 > */
 .md-main .md-content p > strong {
+    font-size: 0.8rem;
     color: var(--md-typeset-a-color);
 }
 
@@ -13,28 +14,29 @@
 
 /* 옵시디언태그 * */
 .md-main .md-content p > em {
+    font-size: 0.8rem;
     color: var(--md-code-hl-string-color);
 }
-/*
-.md-main .md-content article > p {
-    font-size: 0.64rem;
-    all: unset;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-*/
+
 /* 페이지 전체에 적용할 폰트 설정 */
 body {
     font-family: 'KyoboHand', sans-serif;
 }
 
 /* 코드 블록에 적용할 폰트 설정 */
-code {
-    font-family: 'Courier New', monospace;
+.md-typeset :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 0.7rem;
+    line-height: 1.6;
+}
+
+.md-typeset code {
+    background-color: var(--md-code-bg-color);
+    border-radius: 0.1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-size: 0.85em;
+    padding: 0.2rem 0.27rem 0.2rem 0.27rem;
+    word-break: break-word;
 }
 
 .first-hidden-text {
