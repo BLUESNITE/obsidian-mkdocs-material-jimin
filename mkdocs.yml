@@ -217,9 +217,9 @@ nav:
           - 젠킨스 슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스 슬랙.md
           - 젠킨스 Role-Based Authorization Strategy: 1. 개발 및 배포 도구/jenkins/젠킨스 Role-Based Authorization Strategy.md
       - kubernetes:
-          - 쿠버-Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버-Argocd설치.md
-          - 쿠버-CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버-CNI의 종류.md
-          - 쿠버-Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버-Istio gateway 설정.md
+          - 쿠버 Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Argocd설치.md
+          - 쿠버 CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버 CNI의 종류.md
+          - 쿠버 Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio gateway 설정.md
           - 쿠버-MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-MetalLB 세팅이슈.md
           - 쿠버-리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버-리디렉션이슈.md
           - 쿠버-퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버-퍼드 생성 연습.md

@@ -1,8 +1,6 @@
 > [!NOTE] Argocd 쿠버네티스에 설치과정
->
 > 1. 네임스페이 생성
 > 2. install.yaml 로 설치 (하지만 난 yaml 파일을 보관하기 원하기에 파일다운로드로 진행)
->
 > - 필요시 로드밸런서 연결
 
 > 네임 스페이스 생성
@@ -38,7 +36,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath=``"{.data.p
 ```
 
 > Settings Repositories 에서 아래와 같이 작성 (VIA HTTPS)
-> ![[Pasted image 20240704122936.png]]
+
+![[Pasted image 20240704122936.png]]
 
 > Settings Projects 에서 아래와 같이 작성
 

@@ -10,3 +10,5 @@ Clilium
 Flannel vxlan
 WeaveNet
 ```
+
+디테일하게 공부해야하지만 게으름 이슈가 있다. 하여 기록만.

@@ -1,4 +1,4 @@
-> [!TIP]
+> [!TIP] 정보
 > IstioOperator의 설정과 관련된 작업은 주로 트래픽 처리량 증가, 성능 최적화, 안정성 향상, 및 시스템 요구 사항 변화에 따라 이루어집니다. 특히 대규모 시스템에서 다수의 동시 접속자나 높은 트래픽을 처리할 때 설정합니다.
 
 _설정의 주요 목적_
@@ -9,7 +9,6 @@ _설정의 주요 목적_
 - **대응력**: 예상치 못한 트래픽 피크나 이벤트에 대비하여 시스템이 원활하게 작동하도록 합니다.
 
 > [!CHECK] Istio gateway를 관리하는 포인트는 두가지다.
->
 > 1. Deployment
 > 2. HorizontalPodAutoscaler (HPA)
 
@@ -17,6 +16,7 @@ _설정의 주요 목적_
 
 > [!CHECK] Deployment 두가지 ingressgateway , engressgateway
 > kubectl edit deployment istio-ingressgateway -n istio-system
+> 
 > kubectl edit deployment istio-engressgateway -n istio-system
 
 ```Shell
@@ -28,7 +28,7 @@ cpu와 memory는 기본 1, 2Gi 이었는데 변경하여 4, 8Gi로 할당.
 ```
 
 > [!CHECK] HorizontalPodAutoscaler 에서 ingressgateway
->
+> 
 > kubectl get hpa istio-ingressgateway -n istio-system -o yaml
 
 ```Shell
