@@ -29,9 +29,9 @@ site_description: >-
 # Write your documentation in Markdown and create a professional static site in
 # minutes – searchable, customizable, in 60+ languages, for all devices
 
-# Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+# Repository 주석:본문 깃헙에디터링크연결
+#repo_name: squidfunk/mkdocs-material
+#repo_url: https://github.com/squidfunk/mkdocs-material
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2024 Jeong Ji Min
