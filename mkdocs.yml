@@ -277,7 +277,7 @@ nav:
       - aws:
           - AWS EC2에 SSH 접속하기 위한 최소작업: 5. 클라우드 및 인프라/aws/AWS EC2에 SSH 접속하기 위한 최소작업.md
           - AWS 다른나라 리전에서 한국사이트 접속: 5. 클라우드 및 인프라/aws/AWS 다른나라 리전에서 한국사이트 접속.md
-          - AWS-EKS 자격증명하기: 5. 클라우드 및 인프라/aws/AWS-EKS 자격증명하기.md
+          - AWS EKS 자격증명하기: 5. 클라우드 및 인프라/aws/AWS EKS 자격증명하기.md
       - IaC:
           - Terraform provisioner 사용방법: 5. 클라우드 및 인프라/IaC/Terraform provisioner 사용방법.md
           - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라/IaC/Terraform `user_data` 사용 및 로그확인.md
