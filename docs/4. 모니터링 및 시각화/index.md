@@ -1,10 +1,1 @@
-
-**Grafana**
-
-**Jconsole**
-
-**Sampler**
-
-**Scouter**
-
-**Superset**
+![[napkin-selection.png]]

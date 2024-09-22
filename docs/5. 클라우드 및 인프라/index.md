@@ -1,4 +1,2 @@
+![[napkin-selection.png]]
 
-**AWS**
-
-**IaC**

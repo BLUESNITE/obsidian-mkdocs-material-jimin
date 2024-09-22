@@ -1,6 +1,1 @@
-
-**Mysql**
-
-**Opensearch**
-
-**Postgres**
+![[napkin-selection.png]]
