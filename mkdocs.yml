@@ -263,15 +263,15 @@ nav:
   - 4. 모니터링 및 시각화:
       - 4. 모니터링 및 시각화/index.md
       - grafana:
-          - grafana-panels 모음: 4. 모니터링 및 시각화/grafana/grafana-panels 모음.md
+          - grafana panels 모음: 4. 모니터링 및 시각화/grafana/grafana panels 모음.md
       - jconsole:
           - Jconsole to Local: 4. 모니터링 및 시각화/jconsole/Jconsole to Local.md
       - sampler:
-          - sampler-설치: 4. 모니터링 및 시각화/sampler/sampler-설치.md
+          - sampler 설치: 4. 모니터링 및 시각화/sampler/sampler 설치.md
       - scouter:
-          - scouter-설치: 4. 모니터링 및 시각화/scouter/scouter-설치.md
+          - scouter 설치: 4. 모니터링 및 시각화/scouter/scouter 설치.md
       - superset:
-          - Superset을 Terraform Docker로 설치해보았다: 4. 모니터링 및 시각화/superset/Superset을 Terraform Docker로 설치해보았다.md
+          - Superset 설치 (with Terraform): 4. 모니터링 및 시각화/superset/Superset 설치.md
   - 5. 클라우드 및 인프라:
       - 5. 클라우드 및 인프라/index.md
       - aws:

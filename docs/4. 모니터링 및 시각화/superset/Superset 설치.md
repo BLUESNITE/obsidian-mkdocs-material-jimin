@@ -1,17 +1,3 @@
-## 목차
-
-- [1. 소개]
-- [2. 설치]
-  - [2.1. Terraform 디렉토리 구성]
-  - [2.2. Docker 작성]
-- [3. 사용법]
-  - [3.1. 기본 사용법(hello world)]
-  - [3.2. Datasets 작성 및 연결]
-  - [3.3. Chart 그리기]
-- [4. 결론]
-
----
-
 ## 1. 소개
 
 > [!INFO] 글설명
@@ -27,7 +13,7 @@
 
 ### 2.1. Terraform 디렉토리 구성
 
-> [!INFO]
+> [!INFO] 구성
 > 이번에 작성한 기본적인 Terraform 구성이다.
 > Main modul과 Sub modul로 구성하였고, 기본 변수 정의한 것을 기반으로 git clone 부터 시작하여 대상 게스트에 file 전송한다음 docker가 실행되는 형태이다.
 
@@ -48,10 +34,10 @@
 
 ### 2.2. Docker 작성
 
-> [!INFO]
+> [!INFO] 참고
 > Docker 작성이라고 타이틀을 달아두었지만 실제로 직접작성하지 않고, 아파치 깃에서 복사해온다. _git clone https://github.com/apache/superset.git_
 
-> [!TIP] **.env**파일 작성 (가장중요)
+> [!TIP] **.env** 파일 작성 (가장중요)
 > 안내되는 docker compose 파일을 읽어보면 *SECRET_KEY*를 설정하라고 나와있는데 함정이다. 실제로는 *SUPERSET_SECRET_KEY*로 작성해주어야한다.
 
 > .env 파일
@@ -99,8 +85,7 @@ POSTGRES_PASSWORD=superset
 SUPERSET_SECRET_KEY=xpmTm7bmW2VvptczSk7FqAhITyKxWo3WhPRAJruo4R2rkJ1waC4aQTTL
 ```
 
-> [!CHECK]
-
+> [!CHECK] 결과
 > docker-compose-non-dev.yml을 compose한 결과
 
 _docker compose -f docker-compose-non-dev.yml up -d --build_
@@ -112,17 +97,19 @@ _docker compose -f docker-compose-non-dev.yml up -d --build_
 
 ### 3.1. 기본 사용법 (hello world)
 
-> [!INFO]
+> [!INFO] 참고
 > 위와 같이 진행이 잘되었다면 기본계정 admin/admin으로 접속이 가능합니다.
 > localhost:8088
 
 ### 3.2. Datasets 작성 및 연결
 
 ![[Pasted image 20240816090639.png]]
+
 기본적으로 Datasets을 생성하기 위해서는 _우상단 Settings 메뉴의 > Database Connerctions_ 통해서 데이터베이스 연결이 필요합니다.
 
 ![[Pasted image 20240816090807.png]]
-Datasets 메뉴에서는 *Database > Schema > Table*을 선택하면 쉽게 대상 테이블을 설정할 수 있고,
+
+Datasets 메뉴에서는 *Database > Schema > Table* 을 선택하면 쉽게 대상 테이블을 설정할 수 있고,
 
 _SQL > SQL Lab_ 메뉴에서 대상 테이블의 쿼리를 작성하여 Dataset을 생성할 수도 있습니다.
 
@@ -130,7 +117,7 @@ _SQL > SQL Lab_ 메뉴에서 대상 테이블의 쿼리를 작성하여 Dataset�
 
 ![[Pasted image 20240816091134.png]]
 
-*Chart*를 그릴때는 이전에 생성해둔 Dataset을 기반으로 다양한 Chart를 선택하여 그려볼 수 있습니다.
+*Chart* 를 그릴때는 이전에 생성해둔 Dataset을 기반으로 다양한 Chart를 선택하여 그려볼 수 있습니다.
 
 ---
 
@@ -139,5 +126,5 @@ _SQL > SQL Lab_ 메뉴에서 대상 테이블의 쿼리를 작성하여 Dataset�
 _나름의 (?) 정성 가득한_ hello world
 ![[Pasted image 20240816090444.png]]
 
-> [!INFO]
+> [!INFO] 후기
 > 간략한 후기로는 ... 비개발자 or 간단한 SQL 작성가능한 사용자라면 Superset이 좋을 수도 있겠다 싶었지만, BI 솔루션들에 비해 경쟁력이 있을지는 모르겠습니다.

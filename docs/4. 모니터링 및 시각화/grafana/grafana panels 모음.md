@@ -1,7 +1,9 @@
 > [!TIP] 그라파나 그려둔 panels를 backup하기 위해 작성
 > 각각의 Json 내용이 길기 때문에 제목과 동일하게 하단에 Json 추가 작성
 
-```json title:최근_사용자_활동
+#### 최근 사용자 활동
+
+```json
 {
   "datasource": {
     "type": "prometheus",
@@ -139,7 +141,9 @@
 
 ![[Pasted image 20240708155246.png]]
 
-```json title:현재_활성화된_Java_스레드_수
+#### 현재 활성화된 Java 스레드수
+
+```json
 {
   "datasource": {
     "type": "prometheus",
@@ -301,7 +305,9 @@
 
 ![[Pasted image 20240708163547.png]]
 
-```json title:쿠버네티스_워커노드_Virtual_Memory
+#### 쿠버네티스 워커노드 Virtual Memory
+
+```json
 {
   "datasource": {
     "type": "prometheus",
@@ -469,7 +475,9 @@
 
 ![[Pasted image 20240708163604.png]]
 
-```json title:어플리케이션_상태
+#### 어플리케이션 상태
+
+```json
 {
   "datasource": {
     "type": "prometheus",
@@ -615,7 +623,9 @@
 
 ![[Pasted image 20240708163615.png]]
 
-```json title:최근_5분간_쿠버네티스_워커노드_메모리_사용량
+#### 최근 5분간 쿠버네티스 워커노드 메모리 사용량
+
+```json
 {
   "datasource": {
     "type": "prometheus",
@@ -785,7 +795,9 @@
 
 ![[Pasted image 20240708163628.png]]
 
-```json title:최근_5분간_메모리사용량_어플리케이션
+#### 최근 5분간 메모리사용량 어플리케이션
+
+```json 
 {
   "datasource": {
     "type": "prometheus",
@@ -954,7 +966,9 @@
 
 ![[Pasted image 20240708163639.png]]
 
-```json title:최근_5분간_CPU사용량_어플리케이션
+#### 최근 5분간 CPU사용량 어플리케이션
+
+```json
 {
   "datasource": {
     "type": "prometheus",
