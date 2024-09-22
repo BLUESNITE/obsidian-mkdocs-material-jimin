@@ -1,5 +1,8 @@
-> [!NOTE] 아래의 내용은 `apt-get install postgresql postgresql-contrib` 수행 후 기본 접속까지
-> 기본 OS는 우분투 서버입니다.
+> [!NOTE] postgresql cli로 설치
+> 기본 OS는 우분투
+> 
+> 수행 CLI `apt-get install postgresql postgresql-contrib`
+> 
 > 다음에 동일한 작업시 편하게 수행하기 위해 작성하였습니다.
 
 ```shell
