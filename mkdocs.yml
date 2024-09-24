@@ -223,6 +223,14 @@ nav:
           - 쿠버 MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 세팅이슈.md
           - 쿠버 리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 리디렉션이슈.md
           - 쿠버 퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 퍼드 생성 연습.md
+      - Scala:    
+          - Scala 3 News: 1. 개발 및 배포 도구/Scala/Scala 3 News.md
+          - Scala 배경과 특징 그리고 자바: 1. 개발 및 배포 도구/Scala/Scala 배경과 특징 그리고 자바.md
+          - Scala with vscode, Hello Scala!: 1. 개발 및 배포 도구/Scala/Scala with vscode, Hello Scala!.md
+      - Spring Boot Batch:
+          - Spring Boot Batch 설명: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 설명.md
+          - Spring Boot Batch 성능 최적화: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 성능 최적화.md
+          - Spring Boot Batch 학습: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 학습.md
       - nexus:
           - NEXUS 설치: 1. 개발 및 배포 도구/nexus/NEXUS 설치.md
           - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
@@ -250,18 +258,21 @@ nav:
           - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
   - 3. 데이터 관리:
       - 3. 데이터 관리/index.md
-      - mysql:
-          - Mysql 설치: 3. 데이터 관리/mysql/Mysql 설치.md
       - opensearch:
           - 오픈서치 설치: 3. 데이터 관리/opensearch/오픈서치 설치.md
           - 오픈서치 HA: 3. 데이터 관리/opensearch/오픈서치 HA.md
           - 오픈서치 knn설정: 3. 데이터 관리/opensearch/오픈서치 knn설정.md
           - 오픈서치 대시보드 구성 요령: 3. 데이터 관리/opensearch/오픈서치 대시보드 구성 요령.md
+      - Apache Spark:
+          - Apache Spark 배경과 특징: 3. 데이터 관리/Apache Spark/Apache Spark 배경과 특징.md
+          - Apache Spark RDD: 3. 데이터 관리/Apache Spark/Spark RDD.md
+      - qdrant:
+          - Qdrant 설치: 3. 데이터 관리/qdrant/Qdrant 설치.md
+      - mysql:
+          - Mysql 설치: 3. 데이터 관리/mysql/Mysql 설치.md
       - postgres:
           - PostgreSQL 설치: 3. 데이터 관리/postgres/PostgreSQL 설치.md
           - PostgreSQL CLI로 설치: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치.md
-      - qdrant:
-          - Qdrant 설치: 3. 데이터 관리/qdrant/Qdrant 설치.md
   - 4. 모니터링 및 시각화:
       - 4. 모니터링 및 시각화/index.md
       - grafana:
