@@ -9,7 +9,7 @@ sudo apt update && sudo apt install terraform
 ```
 
 > [!NOTE] 오라클 리눅스 인스톨
-> 
+>
 > - RHEL/CentOS
 
 ```
@@ -34,7 +34,7 @@ terraform -install-autocomplete
 
 > [!TIP] 프로비저닝(Provisioning)"이란
 > Terraform에서 _"프로비저닝(Provisioning)"이란_ 클라우드 *인프라 및 리소스를 정의*하고, *배포*하며, *관리*하는 과정을 의미합니다. Terraform은 인프라를 코드(Infrastructure as Code, IaC)로 정의하여 프로비저닝을 자동화하고 일관되게 수행할 수 있도록 합니다. 이 과정을 통해 다양한 클라우드 제공업체 및 서비스에서 리소스를 쉽게 생성하고 관리할 수 있습니다.
-> 
+>
 > - 인프라 정의
 > - 계획
 > - 리소스 배포

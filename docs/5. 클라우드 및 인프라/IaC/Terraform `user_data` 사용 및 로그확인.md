@@ -1,4 +1,4 @@
-> [!INFO] 정보
+> [!INFO]
 > Terraform에서 리소스를 정의하고 user_data 실행 로그 확인 하는 방법
 
 > Terraform 인스턴스 생성 리소스

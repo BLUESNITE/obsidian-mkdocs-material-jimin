@@ -1,6 +1,6 @@
 #### Terraform 변수 정의
 
-> [!INFO] 정보
+> [!INFO]
 > 예시 코드와 함께 Terraform에서 변수 정의하고 사용하는 방법을 익힙니다.
 > Terraform은 HashiCorp Configuration Language(HCL)를 가진 언어입니다.
 

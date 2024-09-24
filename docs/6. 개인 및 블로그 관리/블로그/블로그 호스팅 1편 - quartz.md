@@ -112,3 +112,7 @@ crontab -e
 **늦은 소개 Obsidian Quartz4**
 
 Quartz4에 대한 소개는 내 블로그 최하단 `footer`를 확인해도 된다.
+
+*초기버전*
+
+![[Pasted image 20240922135125.png]]
