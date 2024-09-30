@@ -53,7 +53,7 @@ Scala Language Server와 Scala(sbt)가 둘 다 설치돼 있으면 이 둘을 �
 
 **Custom sbt launcher**
 
-기본적으로 Metals는 내장된 SBT 런처를 사용하며, 환경 변수 및 **'.sbtopts' '.jvmopts' 'SBT_OPTS' 'JAVA_OPTS'**와 같은 설정들을 무시합니다. 이를 해결하기 위해서는 Metals 설정들 중에서 **'Sbt 스크립트'**를 업데이트하여 사용자 지정 스크립트를 사용할 수 있습니다. 추가적인 사용자 설정은 **'.sbt'** 파일 같은 환경과 유사한 사용자 정의를 적용할 수 있습니다.
+기본적으로 Metals는 내장된 SBT 런처를 사용하며, 환경 변수 및 '.sbtopts' '.jvmopts' 'SBT_OPTS' 'JAVA_OPTS'와 같은 설정들을 무시합니다. 이를 해결하기 위해서는 Metals 설정들 중에서 'Sbt 스크립트'를 업데이트하여 사용자 지정 스크립트를 사용할 수 있습니다. 추가적인 사용자 설정은 '.sbt' 파일 같은 환경과 유사한 사용자 정의를 적용할 수 있습니다.
 
 **Speeding up import**
 
@@ -67,7 +67,7 @@ Scala Language Server와 Scala(sbt)가 둘 다 설치돼 있으면 이 둘을 �
 
 이제 대충 설치는 끝이 났습니다. Hello Scala 출력으로의 진행을 확인해보겠습니다.
 
-### **Hello Scala 출력하기**
+### Hello Scala 출력하기
 
 extention metals를 설치를 하고,
 
@@ -109,8 +109,8 @@ extention metals를 설치를 하고,
 
 build.sbt 파일을 열어봅니다.
 
-이때 기본버전이 **"2.13.12"**으로 설치되어 있다면 가장 최신버전( **"3.3.1"** )으로 변경해줍니다.
+이때 기본버전이 "2.13.12"으로 설치되어 있다면 가장 최신버전( "3.3.1" )으로 변경해줍니다.
 
-변경 후 우측 끝에서 Libraries이하 **scala3-library_3-3.3.1-sources.jar**를 확인 할 수 있습니다.
+변경 후 우측 끝에서 Libraries이하 scala3-library_3-3.3.1-sources.jar를 확인 할 수 있습니다.
 
 ![](https://blog.kakaocdn.net/dn/bYV4e3/btsCLohA7vh/KjovNDhjomEmqkWyTLTqW1/img.png)

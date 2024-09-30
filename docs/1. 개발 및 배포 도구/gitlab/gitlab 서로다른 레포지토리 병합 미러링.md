@@ -14,7 +14,7 @@
 
 ### 2. 이관 전략
 
-![[00) 출판/1. 개발 및 배포 도구/gitlab/_topdown/napkin-selection.png]]
+![[napkin-selection.png]]
 
 > [!CHECK] 이관 전략
 
