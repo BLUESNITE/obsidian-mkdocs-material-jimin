@@ -6,7 +6,7 @@
 *옵션 설명*
 
 - **NVIDIA driver metapackage from nvidia-driver-550**
- 검증된 최신 버전의 NVIDIA 독점 드라이버 550
+: 검증된 최신 버전의 NVIDIA 독점 드라이버 550
 - **NVIDIA driver metapackage from nvidia-driver-535**
 : 버전 535의 독점 드라이버
 - **NVIDIA driver metapackage from nvidia-driver-535-open (open kernel)**
@@ -85,6 +85,7 @@ apt-get install -y cuda-drivers
 
 #### Gnome-shell 추가 되면서 동작사항 업데이트
 nvidia-smi를 다시 확인해보면... gnome-shell 이 추가되었다.
+
 ![[Pasted image 20240930153406.png]]
 
 여기서 운좋게 캐치.
@@ -121,3 +122,8 @@ sudo systemctl restart xrdp 후 접속
 
 - NVIDIA 드라이버가 설치되지 않았거나 잘못 설치된 경우, `X11/Xsession`과 같은 그래픽 환경에서 GPU를 제대로 활용하지 못해 `xrdp` 연결이 실패할 수 있음
 - `cuda-drivers`를 설치하면서 NVIDIA 드라이버가 업데이트되어 X 서버와의 호환성이 개선되고, 이로 인해 `xrdp` 세션에서 화면이 정상적으로 출력되었을 수도 있음
+
+**gnome shell 세션 다 날리기**:
+```shell
+killall gnome-shell
+```
