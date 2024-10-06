@@ -254,6 +254,7 @@ nav:
       - ubuntu:
           - ubuntu IP고정: 2. 운영체제 및 서버 관리/ubuntu/ubuntu IP고정.md
           - ubuntu desktop install: 2. 운영체제 및 서버 관리/ubuntu/ubuntu desktop install.md
+          - ubuntu ssh 접속오픈: 2. 운영체제 및 서버 관리/ubuntu/ubuntu ssh 접속을 위한 포트오픈.md
           - ubuntu GPU SERVER 설치: 2. 운영체제 및 서버 관리/ubuntu/ubuntu GPU SERVER 설치.md
       - window:
           - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
@@ -299,7 +300,6 @@ nav:
           - Terraform 설치 후 테스트: 5. 클라우드 및 인프라/IaC/Terraform 설치 후 테스트.md
   - 6. 개인 및 블로그 관리:
       - 6. 개인 및 블로그 관리/index.md
-      
       - 블로그:
           - 블로그 호스팅: 6. 개인 및 블로그 관리/블로그/블로그 호스팅 1편 - quartz.md
           - 블로그 이관: 6. 개인 및 블로그 관리/블로그/블로그 호스팅 2편 - mkdocs.md

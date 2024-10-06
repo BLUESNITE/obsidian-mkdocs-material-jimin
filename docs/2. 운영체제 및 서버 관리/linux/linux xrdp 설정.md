@@ -27,3 +27,9 @@ sudo systemctl restart xrdp
 설정을 바꾸기 전에 다를 Tool의 RDP로 접속 시도를 해보자. 될 수도? 있다.
 
 내 경우는 `MobaXterm RDP`로 해결하여 잘 사용하고있다.
+
+**gnome shell 세션 다 날리기**:
+
+```shell
+killall gnome-shell
+```
