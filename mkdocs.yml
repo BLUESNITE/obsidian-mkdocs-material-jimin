@@ -268,6 +268,8 @@ nav:
       - Apache Spark:
           - Apache Spark 배경과 특징: 3. 데이터 관리/Apache Spark/Apache Spark 배경과 특징.md
           - Apache Spark RDD: 3. 데이터 관리/Apache Spark/Spark RDD.md
+      - mongodb:
+          - Mongodb database 생성 및 CRUD 테스트: 3. 데이터 관리/mongodb/Mongodb database 생성 및 CRUD 테스트.md
       - qdrant:
           - Qdrant 설치: 3. 데이터 관리/qdrant/Qdrant 설치.md
       - mysql:
