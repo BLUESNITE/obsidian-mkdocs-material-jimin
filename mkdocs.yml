@@ -256,6 +256,10 @@ nav:
           - kvm containerd 디스크 문제 해결 방법: 2. 운영체제 및 서버 관리/qemu-kvm/kvm containerd 디스크 문제 해결 방법.md
           - kvm 명령어: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 명령어.md
           - kvm 아이피 확인절차: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 아이피 확인절차.md
+      - fedora:
+          - fedora Workstation 설치: 2. 운영체제 및 서버 관리/fedora/fedora Workstation 설치.md
+      - rockey:
+          - rockey 이미지 기본 설치항목: 2. 운영체제 및 서버 관리/rockey/rockey 이미지 기본 설치항목.md
       - ubuntu:
           - ubuntu IP고정: 2. 운영체제 및 서버 관리/ubuntu/ubuntu IP고정.md
           - ubuntu desktop install: 2. 운영체제 및 서버 관리/ubuntu/ubuntu desktop install.md
