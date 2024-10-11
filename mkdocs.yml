@@ -265,6 +265,8 @@ nav:
           - ubuntu desktop install: 2. 운영체제 및 서버 관리/ubuntu/ubuntu desktop install.md
           - ubuntu ssh 접속오픈: 2. 운영체제 및 서버 관리/ubuntu/ubuntu ssh 접속을 위한 포트오픈.md
           - ubuntu GPU SERVER 설치: 2. 운영체제 및 서버 관리/ubuntu/ubuntu GPU SERVER 설치.md
+          - ubuntu 부트로더 및 절전모드 관리: 2. 운영체제 및 서버 관리/ubuntu/ubuntu 부트로더 및 절전모드 관리.md
+          - ubuntu nvidia-container-toolkit error: 2. 운영체제 및 서버 관리/ubuntu/ubuntu nvidia-container-toolkit error.md
       - window:
           - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
   - 3. 데이터 관리:
