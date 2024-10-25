@@ -13,6 +13,7 @@
 > istio ingressgateway를 정확히 설정하고 dns 서버로 도메인 호스팅까지 유연하게 설정하기.
 
 **Kiali 사용방법 및 활용가능여부 체크**
+
 istio를 반복적으로 재설치 하다가 발견한 Kiali 공식 사이트의 가이드에 따라서 설치 연결은 성공하였는데. 이 툴의 도움을 받아 쉽게 설정할 수 있는지 확인. [Kiali Quick Start](https://kiali.io/docs/installation/quick-start/ "Kiali Quick Start")
 
 > [!NOTE] 추가 설치 prometheus
@@ -25,6 +26,7 @@ kubectl apply -f /home/tech/data/k8s/istio-1.23.2/samples/addons/prometheus.yaml
 ![[Pasted image 20241023185017.png]]
 
 **Create Gateway 설정 방법**
+
 `Istio Gateway`는 외부 트래픽을 클러스터 내부 서비스로 라우팅하기 위한 중요한 구성 요소
 
 - Namespace : Istio의 인그레스 게이트웨이를 설정하고 관리할 네임스페이스를 지정
@@ -36,6 +38,7 @@ kubectl apply -f /home/tech/data/k8s/istio-1.23.2/samples/addons/prometheus.yaml
 - Preview : 미리확인
 
 **예시 설정**
+
 - Name: my-gateway
 - Server List:
     - Port: 80
@@ -96,7 +99,8 @@ spec:
 ![[Pasted image 20241024162200.png]]
 
 생성한 게이트웨이
-*gateway*
+
+*gateway 내용*
 ```
 kind: Gateway
 apiVersion: networking.istio.io/v1
@@ -180,12 +184,18 @@ spec:
 
 > [!TIP] 흐름 설명
 > Istio Gateway와 NGINX 서비스가 연동되는 흐름
-> 1) **IngressGateway 서비스**는 클러스터 외부에서 트래픽을 받아들이는 역할
+>   
+>   
+> 1) **IngressGateway 서비스** 는 클러스터 외부에서 트래픽을 받아들이는 역할
 >     (istio-ingressgateway의 nodeport 30080)
-> 2) **kind: Gateway**가 리소스를 어떤 트래픽으로 갈지 결정
+>   
+>   
+> 2) **kind: Gateway** 가 리소스를 어떤 트래픽으로 갈지 결정
 >     (예를들어 * 도메인 에서 오는 트래픽을 허용하고 80포트 요청을 처리)
 >     (Selector를 통해 istio ingressgateway가 Gateway와 연결 설정)
 >     (Gateway는 필터링한 트래픽을 연결된 vs service로 전달)
+>   
+>   
 >  3) **VirtualService** 리소스는 트래픽이 어디로 라우팅 될지 결정
 >     (모든 트래픽에 대해서 nginx-service로 전달)
 
@@ -195,9 +205,13 @@ spec:
 한번더
 
 1) 외부 클라이언트가 `http://<노드 IP>:30080`으로 요청을 보냅니다.
+
 2) istio-ingressgateway가 NodePort로 트래픽을 받아, Istio Gateway에서 트래픽을 필터링
+
 3) hello-world-gateway는 80번 포트로 오는 모든 트래픽 허용하고 nginx-vs라는 VirtualService로 전달
+
 4) nginx-vs는 모든 경로(`"/"`)의 트래픽을 nginx-service의 80번 포트로 라우팅
+
 5) NGINX 서비스가 트래픽을 받아 처리
 
 > [!WARNING] 추가고려사항
@@ -228,6 +242,7 @@ spec:
 > [!CHECK] 이제부터 dns 설정에 따른 gateway 테스트 점검
 
 **Nginx 설정**
+
 아래와 같이 `labs-nginx.x2bee.com`와 `labs-argocd.x2bee.com`를 동일한 Nginx conf에 정의하고,
 Tplink를 통해서 동일하게 k8s Istio gateway로 요청이 넘어가게 작업을 하였다.
 하면, 지금까지 작성했던 내용 기반으로 같은 Pod Nginx까지 도달하게 된다.
@@ -260,6 +275,7 @@ server {
 ```
 
 *여기까지 점검이 되었다면*
+
 Nginx VirtualService를 수정하여 서로 다른 Service Nginx까지 도달하도록 작업을 진행해본다.
 
 *연습용 nginx pod 2*
