@@ -221,12 +221,15 @@ nav:
           - 쿠버 리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 리디렉션이슈.md
           - 쿠버 퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 퍼드 생성 연습.md
           - 쿠버 calico 설치: 1. 개발 및 배포 도구/kubernetes/쿠버 calico 설치.md
+          - 쿠버 Loadbalancer 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 Loadbalancer 연습.md
           - 쿠버 MetalLB 인스톨: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 인스톨.md
           - 쿠버 MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 세팅이슈.md
           - 쿠버 Istio 설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio 설치.md
           - 쿠버 Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio gateway 설정.md
+          - 쿠버 Kiali 네트워크설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Kiali 네트워크설정.md
           - 쿠버 대시보드 설치하기: 1. 개발 및 배포 도구/kubernetes/쿠버 대시보드 설치하기.md
           - 쿠버 Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Argocd설치.md
+          - 쿠버 로키에 설치 개선버전: 1. 개발 및 배포 도구/kubernetes/쿠버 로키에 설치 개선버전.md
 
       - Scala:    
           - Scala 3 News: 1. 개발 및 배포 도구/Scala/Scala 3 News.md
