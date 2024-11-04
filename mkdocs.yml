@@ -231,7 +231,7 @@ nav:
           - 쿠버 Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Argocd설치.md
           - 쿠버 로키에 설치 개선버전: 1. 개발 및 배포 도구/kubernetes/쿠버 로키에 설치 개선버전.md
 
-      - Scala:    
+      - Scala:
           - Scala 3 News: 1. 개발 및 배포 도구/Scala/Scala 3 News.md
           - Scala 배경과 특징 그리고 자바: 1. 개발 및 배포 도구/Scala/Scala 배경과 특징 그리고 자바.md
           - Scala with vscode, Hello Scala!: 1. 개발 및 배포 도구/Scala/Scala with vscode, Hello Scala!.md
@@ -303,17 +303,20 @@ nav:
           - scouter 설치: 4. 모니터링 및 시각화/scouter/scouter 설치.md
       - superset:
           - Superset 설치 (with Terraform): 4. 모니터링 및 시각화/superset/Superset 설치.md
-  - 5. 클라우드 및 인프라:
-      - 5. 클라우드 및 인프라/index.md
+  - 5. 클라우드 및 인프라 IaC:
+      - 5. 클라우드 및 인프라 IaC/index.md
       - aws:
-          - AWS EC2에 SSH 접속하기 위한 최소작업: 5. 클라우드 및 인프라/aws/AWS EC2에 SSH 접속하기 위한 최소작업.md
-          - AWS 다른나라 리전에서 한국사이트 접속: 5. 클라우드 및 인프라/aws/AWS 다른나라 리전에서 한국사이트 접속.md
-          - AWS EKS 자격증명하기: 5. 클라우드 및 인프라/aws/AWS EKS 자격증명하기.md
-      - IaC:
-          - Terraform provisioner 사용방법: 5. 클라우드 및 인프라/IaC/Terraform provisioner 사용방법.md
-          - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라/IaC/Terraform `user_data` 사용 및 로그확인.md
-          - Terraform 변수 정의하기: 5. 클라우드 및 인프라/IaC/Terraform 변수 정의하기.md
-          - Terraform 설치 후 테스트: 5. 클라우드 및 인프라/IaC/Terraform 설치 후 테스트.md
+          - AWS EC2에 SSH 접속하기 위한 최소작업: 5. 클라우드 및 인프라 IaC/aws/AWS EC2에 SSH 접속하기 위한 최소작업.md
+          - AWS 다른나라 리전에서 한국사이트 접속: 5. 클라우드 및 인프라 IaC/aws/AWS 다른나라 리전에서 한국사이트 접속.md
+          - AWS EKS 자격증명하기: 5. 클라우드 및 인프라 IaC/aws/AWS EKS 자격증명하기.md
+      - ansible:
+          - ansible 학습: 5. 클라우드 및 인프라 IaC/ansible/ansible 학습.md
+          - ansible 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible 설치.md
+      - terraform:
+          - Terraform provisioner 사용방법: 5. 클라우드 및 인프라 IaC/terraform/Terraform provisioner 사용방법.md
+          - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라 IaC/terraform/Terraform `user_data` 사용 및 로그확인.md
+          - Terraform 변수 정의하기: 5. 클라우드 및 인프라 IaC/terraform/Terraform 변수 정의하기.md
+          - Terraform 설치 후 테스트: 5. 클라우드 및 인프라 IaC/terraform/Terraform 설치 후 테스트.md
   - 6. 개인 및 블로그 관리:
       - 6. 개인 및 블로그 관리/index.md
       - 블로그:
@@ -322,7 +325,7 @@ nav:
       - 생각:
           - 스토리 포인트는 무의미하다의 글: 6. 개인 및 블로그 관리/생각/스토리 포인트는 무의미하다의 글.md
           - 옳은 종류의 고집: 6. 개인 및 블로그 관리/생각/옳은 종류의 고집.md
-          - 군자: 6. 개인 및 블로그 관리/생각/군자.md          
+          - 군자: 6. 개인 및 블로그 관리/생각/군자.md
       - 옵시디언:
           - 플러그인 - Execute Code: 6. 개인 및 블로그 관리/옵시디언/플러그인 - Execute Code.md
       - 추천글:
