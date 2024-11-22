@@ -211,6 +211,7 @@ nav:
           - 도커 사용을 편리하게: 1. 개발 및 배포 도구/docker/도커 사용을 편리하게.md
           - 도커 overlay 때문에 데이터 경로변경: 1. 개발 및 배포 도구/docker/도커 overlay 때문에 데이터 경로변경.md
       - gitlab:
+          - gitlab vscode에서 rebase, revent하기: 1. 개발 및 배포 도구/gitlab/gitlab vscode에서 rebase, revent하기.md
           - gitlab 서로다른 레포지토리 병합 미러링: 1. 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
       - jenkins:
           - 젠킨스 agent: 1. 개발 및 배포 도구/jenkins/젠킨스 agent.md
