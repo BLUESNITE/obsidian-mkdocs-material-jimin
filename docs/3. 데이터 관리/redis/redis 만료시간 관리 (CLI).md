@@ -10,7 +10,7 @@ EXPIRE <key> <seconds>
 PEXPIRE <key> <milliseconds>
 ```
 
-이전에 소개한 *Redis Insight*에 좌측 하단에 CLI 메뉴가 있습니다
+이전에 소개한 *Redis Insight* 에 좌측 하단에 CLI 메뉴가 있습니다
 
 ![[Pasted image 20241129080419.png]]
 
