@@ -276,6 +276,9 @@ nav:
           - powershell에서 디렉토리 트리보기: 2. 운영체제 및 서버 관리/window/powershell에서 디렉토리 트리보기.md
   - 3. 데이터 관리:
       - 3. 데이터 관리/index.md
+      - redis:
+          - redis 새로운 관리프로그램과 사용: 3. 데이터 관리/redis/redis 새로운 관리프로그램과 사용.md
+          - redis 만료시간 관리 (CLI): 3. 데이터 관리/redis/redis 만료시간 관리 (CLI).md
       - opensearch:
           - 오픈서치 설치: 3. 데이터 관리/opensearch/오픈서치 설치.md
           - 오픈서치 HA: 3. 데이터 관리/opensearch/오픈서치 HA.md
