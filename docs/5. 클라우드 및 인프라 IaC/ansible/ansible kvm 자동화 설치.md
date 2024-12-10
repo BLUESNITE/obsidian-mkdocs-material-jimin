@@ -1,6 +1,8 @@
 > [!NOTE] 작업의 기준
 > VM 생성 + 운영 체제 초기화, 네트워크 설정 - Ansible
+> 
 > 초기 소프트웨어 설치 - Ansible
+> 
 > 상태 및 수행 관리 - Terraform
 
 #### 수행 Flow
