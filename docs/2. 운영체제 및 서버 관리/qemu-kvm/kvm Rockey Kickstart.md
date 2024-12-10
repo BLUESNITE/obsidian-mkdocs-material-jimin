@@ -2,6 +2,7 @@
 > Kickstart는 Red Hat 계열의 Linux 배포판에서 무인 설치를 자동화 하는데 사용되는 파일 기반의 설치 방식입니다. Kickstart를 정의하여 일관성 있는 시스템 설치가 가능합니다.
 
 **주요 구성 요소**
+
 - 기본 시스템 설정
 - 설치 소스
 - 디스크 파티션
@@ -78,7 +79,9 @@ echo "Post-install tasks completed" >> /root/install.log
 ```
 
 *주의 사항 1*
+
 아래 설정이 적용되지 않을시 인스톨 불가
+
 `vm_inst_base_repo: https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/`
 `vm_inst_app_repo: https://download.rockylinux.org/pub/rocky/9/AppStream/x86_64/os/`
 ```
@@ -91,7 +94,9 @@ repo --name="BaseOS" --baseurl={{ vm_inst_base_repo }}
 ```
 
 *주의 사항 2*
+
 아래 설정으로 자동 설정 구성 ( but, 목적에 맞게 파티션 구성도 할 수 있어야함 )
+
 ```
 # 디스크 파티션 설정 (자동 설정)
 zerombr                      # 모든 디스크 초기화
@@ -100,7 +105,10 @@ autopart --type=lvm          # LVM으로 자동 파티션 구성
 ```
 
 *주의 사항 3*
+
 umount를 진행하지 않으면 계속해서 CDROM boot 가 되기에 설치 & 리붓 무한반복
+
 ```
 umount /mnt/source
 ```
+
