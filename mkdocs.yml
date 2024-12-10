@@ -261,6 +261,7 @@ nav:
           - kvm containerd 디스크 문제 해결 방법: 2. 운영체제 및 서버 관리/qemu-kvm/kvm containerd 디스크 문제 해결 방법.md
           - kvm 명령어: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 명령어.md
           - kvm 아이피 확인절차: 2. 운영체제 및 서버 관리/qemu-kvm/kvm 아이피 확인절차.md
+          - kvm Rockey Kickstart: 2. 운영체제 및 서버 관리/qemu-kvm/kvm Rockey Kickstart.md
       - fedora:
           - fedora Workstation 설치: 2. 운영체제 및 서버 관리/fedora/fedora Workstation 설치.md
       - rockey:
