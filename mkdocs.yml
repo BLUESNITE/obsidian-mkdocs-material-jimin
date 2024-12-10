@@ -317,6 +317,7 @@ nav:
       - ansible:
           - ansible 학습: 5. 클라우드 및 인프라 IaC/ansible/ansible 학습.md
           - ansible 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible 설치.md
+          - ansible kvm 자동화 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible kvm 자동화 설치.md          
       - terraform:
           - Terraform provisioner 사용방법: 5. 클라우드 및 인프라 IaC/terraform/Terraform provisioner 사용방법.md
           - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라 IaC/terraform/Terraform `user_data` 사용 및 로그확인.md
