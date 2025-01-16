@@ -324,6 +324,9 @@ nav:
           - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라 IaC/terraform/Terraform `user_data` 사용 및 로그확인.md
           - Terraform 변수 정의하기: 5. 클라우드 및 인프라 IaC/terraform/Terraform 변수 정의하기.md
           - Terraform 설치 후 테스트: 5. 클라우드 및 인프라 IaC/terraform/Terraform 설치 후 테스트.md
+      - smtp:
+          - SMTP 메일 전송 프로토콜: 5. 클라우드 및 인프라 IaC/smtp/SMTP 메일 전송 프로토콜.md
+          
   - 6. 개인 및 블로그 관리:
       - 6. 개인 및 블로그 관리/index.md
       - 블로그:
