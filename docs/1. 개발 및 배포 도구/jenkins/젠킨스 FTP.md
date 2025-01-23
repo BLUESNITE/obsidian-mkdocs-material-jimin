@@ -56,7 +56,7 @@ dir("/var/jenkins_home/mnt/${APP_NAME}-next-${PRJ_TARGET}") {
 ```
 
 *동작 요약*
-1
+
 1. Jenkins는 dir() 디렉터리로 이동
 2. 해당 디렉터리의 모든 파일(/)을 FTP 서버에 업로드
 3. 업로드 전에 cleanRemote: true로 FTP 경로(/)의 모든 파일을 삭제
