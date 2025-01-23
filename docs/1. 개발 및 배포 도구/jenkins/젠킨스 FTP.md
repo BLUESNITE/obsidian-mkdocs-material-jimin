@@ -24,38 +24,39 @@
 
 ```
 dir("/var/jenkins_home/mnt/${APP_NAME}-next-${PRJ_TARGET}") {
-            script {
-                ftpPublisher alwaysPublishFromMaster: true,
-                continueOnError: false,
-                failOnError: false,
-                publishers: [
+    script {
+        ftpPublisher alwaysPublishFromMaster: true,
+        continueOnError: false,
+        failOnError: false,
+        publishers: [
+            [
+                configName: "ftp-(Jenkins에서 설정한 FTP 서버 이름)",  // 이 항목이 위에서 Name
+                transfers: [
                     [
-                        configName: "ftp-(Jenkins에서 설정한 FTP 서버 이름)",  // 이 항목이 위에서 Name
-                        transfers: [
-                            [
-                                asciiMode: false,          // 바이너리 모드로 업로드
-                                cleanRemote: true,      // 업로드 전에 기존 파일 삭제 안 함 
-                                excludes: '',                // 제외할 파일 없음
-                                flatten: false,              // 디렉터리 구조 유지
-                                makeEmptyDirs: true, // 빈 디렉터리 생성 안 함
-                                noDefaultExcludes: false, // 기본 제외 규칙 사용
-                                patternSeparator: '[, ]+', // 파일 패턴 구분자
-                                remoteDirectory: '/',        // FTP 서버 업로드 경로
-                                remoteDirectorySDF: false, // 날짜별 디렉터리 생성 안 함
-                                removePrefix: '',                // 경로에서 제거할 접두사 없음
-                                sourceFiles: '**/*'             // 업로드할 파일 경로 또는 파일명 명시
-                            ]
-                        ],
-                        usePromotionTimestamp: false,
-                        useWorkspaceInPromotion: false,
-                        verbose: true
+                        asciiMode: false,          // 바이너리 모드로 업로드
+                        cleanRemote: true,      // 업로드 전에 기존 파일 삭제 안 함 
+                        excludes: '',                // 제외할 파일 없음
+                        flatten: false,              // 디렉터리 구조 유지
+                        makeEmptyDirs: true, // 빈 디렉터리 생성 안 함
+                        noDefaultExcludes: false, // 기본 제외 규칙 사용
+                        patternSeparator: '[, ]+', // 파일 패턴 구분자
+                        remoteDirectory: '/',        // FTP 서버 업로드 경로
+                        remoteDirectorySDF: false, // 날짜별 디렉터리 생성 안 함
+                        removePrefix: '',                // 경로에서 제거할 접두사 없음
+                        sourceFiles: '**/*'             // 업로드할 파일 경로 또는 파일명 명시
                     ]
-                ]
-            }
-        }
+                ],
+                usePromotionTimestamp: false,
+                useWorkspaceInPromotion: false,
+                verbose: true
+            ]
+        ]
+    }
+}
 ```
 
 *동작 요약*
+1
 1. Jenkins는 dir() 디렉터리로 이동
 2. 해당 디렉터리의 모든 파일(/)을 FTP 서버에 업로드
 3. 업로드 전에 cleanRemote: true로 FTP 경로(/)의 모든 파일을 삭제
