@@ -75,13 +75,13 @@ theme:
       toggle:
         icon: material/link
         name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+    #- media: "(prefers-color-scheme: light)"
+    #  scheme: default
+    #  primary: indigo
+    #  accent: indigo
+    #  toggle:
+    #    icon: material/toggle-switch
+    #    name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -319,7 +319,7 @@ nav:
       - ansible:
           - ansible 학습: 5. 클라우드 및 인프라 IaC/ansible/ansible 학습.md
           - ansible 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible 설치.md
-          - ansible kvm 자동화 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible kvm 자동화 설치.md          
+          - ansible kvm 자동화 설치: 5. 클라우드 및 인프라 IaC/ansible/ansible kvm 자동화 설치.md
       - terraform:
           - Terraform provisioner 사용방법: 5. 클라우드 및 인프라 IaC/terraform/Terraform provisioner 사용방법.md
           - Terraform `user_data` 사용 및 로그확인: 5. 클라우드 및 인프라 IaC/terraform/Terraform `user_data` 사용 및 로그확인.md
@@ -327,7 +327,7 @@ nav:
           - Terraform 설치 후 테스트: 5. 클라우드 및 인프라 IaC/terraform/Terraform 설치 후 테스트.md
       - smtp:
           - SMTP 메일 전송 프로토콜: 5. 클라우드 및 인프라 IaC/smtp/SMTP 메일 전송 프로토콜.md
-          
+
   - 6. 개인 및 블로그 관리:
       - 6. 개인 및 블로그 관리/index.md
       - 블로그:
