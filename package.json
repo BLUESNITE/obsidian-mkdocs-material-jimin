@@ -24,6 +24,7 @@
     "url": "https://github.com/squidfunk/mkdocs-material.git"
   },
   "scripts": {
+    "localhost311": "python3.11 -m mkdocs serve",
     "localhost": "python3.12 -m mkdocs serve",
     "localhost:8080": "python3.12 -m mkdocs serve --dev-addr=0.0.0.0:8080",
     "build": "rimraf material && ts-node -T tools/build --optimize",
