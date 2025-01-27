@@ -71,24 +71,24 @@ theme:
     - toc.follow
     #- toc.integrate # 우측 목차 네비로 병합
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    #- media: "(prefers-color-scheme: light)"
-    #  scheme: default
-    #  primary: indigo
-    #  accent: indigo
-    #  toggle:
-    #    icon: material/toggle-switch
-    #    name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: "(prefers-color-scheme: dark)" # 기본 다크 모드 설정
       scheme: slate
       primary: black
       accent: indigo
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to dark mode
   #주석:폰트
   font:
     text: Sans Pro
