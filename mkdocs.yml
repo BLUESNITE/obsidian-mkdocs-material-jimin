@@ -201,8 +201,8 @@ not_in_nav: |
   /tutorials/**/*.md
 
 nav:
-  - Home:
-      - blog: blog/index.md
+  - History:
+      - History: blog/index.md
 
   - 1. 개발 및 배포 도구:
       - 1. 개발 및 배포 도구/index.md
