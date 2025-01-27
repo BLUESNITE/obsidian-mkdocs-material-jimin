@@ -101,7 +101,7 @@ theme:
 
 # Plugins
 plugins:
-  #- blog
+  - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - regex_filter
@@ -201,7 +201,9 @@ not_in_nav: |
   /tutorials/**/*.md
 
 nav:
-  - Home: index.md
+  - Home:
+      - blog: blog/index.md
+
   - 1. 개발 및 배포 도구:
       - 1. 개발 및 배포 도구/index.md
       - argocd:
@@ -345,3 +347,4 @@ nav:
           - 내가 학습한 워크플로우: 6. 개인 및 블로그 관리/학습/워크플로우.md
       - 내소개:
           - 내 소개: 6. 개인 및 블로그 관리/내소개/내 소개.md
+#   - blog: index.md
