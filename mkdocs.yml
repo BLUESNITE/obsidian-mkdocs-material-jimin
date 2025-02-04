@@ -247,6 +247,8 @@ nav:
       - nexus:
           - NEXUS 설치: 1. 개발 및 배포 도구/nexus/NEXUS 설치.md
           - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
+      - nextjs:
+          - Nextjs Cdn 구성과 무중단 배포 전략: 1. 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
       - sonarqube:
           - SonarQube 설치 및 통합 가이드: 1. 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
   - 2. 운영체제 및 서버 관리:
