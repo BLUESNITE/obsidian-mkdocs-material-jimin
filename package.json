@@ -24,6 +24,7 @@
     "url": "https://github.com/squidfunk/mkdocs-material.git"
   },
   "scripts": {
+    "mac:venv": "cd /Users/blue/project/venv && source mymkdocs/bin/activate",
     "localhost311": "python3.11 -m mkdocs serve",
     "localhost": "python3.12 -m mkdocs serve",
     "localhost:8080": "python3.12 -m mkdocs serve --dev-addr=0.0.0.0:8080",
