@@ -314,6 +314,7 @@ nav:
           - scouter 설치: 4. 모니터링 및 시각화/scouter/scouter 설치.md
       - superset:
           - Superset 설치 (with Terraform): 4. 모니터링 및 시각화/superset/Superset 설치.md
+          - Superset 설치 2 (2025-02): 4. 모니터링 및 시각화/superset/Superset 설치 2 (02-20).md
   - 5. 클라우드 및 인프라 IaC:
       - 5. 클라우드 및 인프라 IaC/index.md
       - aws:
