@@ -1,2 +1,0 @@
-![[napkin-selection.png]]
-
