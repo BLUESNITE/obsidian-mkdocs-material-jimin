@@ -203,7 +203,6 @@ not_in_nav: |
 nav:
   - History:
       - History: blog/index.md
-
   - 1. 개발 및 배포 도구:
       - 1. 개발 및 배포 도구/index.md
       - argocd:
@@ -247,6 +246,8 @@ nav:
       - nexus:
           - NEXUS 설치: 1. 개발 및 배포 도구/nexus/NEXUS 설치.md
           - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
+      - Harbor:
+          - Harbor 설치: 1. 개발 및 배포 도구/harbor/Harbor 설치.md
       - nextjs:
           - Nextjs Cdn 구성과 무중단 배포 전략: 1. 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
       - sonarqube:
@@ -332,7 +333,6 @@ nav:
           - Terraform 설치 후 테스트: 5. 클라우드 및 인프라 IaC/terraform/Terraform 설치 후 테스트.md
       - smtp:
           - SMTP 메일 전송 프로토콜: 5. 클라우드 및 인프라 IaC/smtp/SMTP 메일 전송 프로토콜.md
-
   - 6. 개인 및 블로그 관리:
       - 6. 개인 및 블로그 관리/index.md
       - 블로그:
@@ -353,4 +353,4 @@ nav:
           - 내가 학습한 워크플로우: 6. 개인 및 블로그 관리/학습/워크플로우.md
       - 내소개:
           - 내 소개: 6. 개인 및 블로그 관리/내소개/내 소개.md
-#   - blog: index.md
+  - 7. 용어 일지:
