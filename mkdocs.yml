@@ -199,59 +199,57 @@ markdown_extensions:
 
 not_in_nav: |
   /tutorials/**/*.md
-
 nav:
   - History:
       - History: blog/index.md
   - 1. 개발 및 배포 도구:
-      - 1. 개발 및 배포 도구/index.md
-      - argocd:
-          - Argocd 성능개선: 1. 개발 및 배포 도구/argocd/Argocd-성능개선.md
-      - docker:
-          - 도커 설치: 1. 개발 및 배포 도구/docker/도커 설치.md
-          - 도커 사용을 편리하게: 1. 개발 및 배포 도구/docker/도커 사용을 편리하게.md
-          - 도커 overlay 때문에 데이터 경로변경: 1. 개발 및 배포 도구/docker/도커 overlay 때문에 데이터 경로변경.md
-      - gitlab:
-          - gitlab vscode에서 rebase, revent하기: 1. 개발 및 배포 도구/gitlab/gitlab vscode에서 rebase, revent하기.md
-          - gitlab 서로다른 레포지토리 병합 미러링: 1. 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
-      - jenkins:
-          - 젠킨스 agent: 1. 개발 및 배포 도구/jenkins/젠킨스 agent.md
-          - 젠킨스 FTP: 1. 개발 및 배포 도구/jenkins/젠킨스 FTP.md
-          - 젠킨스 rebuild 후속작업: 1. 개발 및 배포 도구/jenkins/젠킨스 rebuild 후속작업.md
-          - 젠킨스 슬랙: 1. 개발 및 배포 도구/jenkins/젠킨스 슬랙.md
-          - 젠킨스 Role-Based Authorization Strategy: 1. 개발 및 배포 도구/jenkins/젠킨스 Role-Based Authorization Strategy.md
-      - kubernetes:
-          - 쿠버 CNI의 종류: 1. 개발 및 배포 도구/kubernetes/쿠버 CNI의 종류.md
-          - 쿠버 리디렉션이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 리디렉션이슈.md
-          - 쿠버 퍼드 생성 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 퍼드 생성 연습.md
-          - 쿠버 calico 설치: 1. 개발 및 배포 도구/kubernetes/쿠버 calico 설치.md
-          - 쿠버 Loadbalancer 연습: 1. 개발 및 배포 도구/kubernetes/쿠버 Loadbalancer 연습.md
-          - 쿠버 MetalLB 인스톨: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 인스톨.md
-          - 쿠버 MetalLB 세팅이슈: 1. 개발 및 배포 도구/kubernetes/쿠버 MetalLB 세팅이슈.md
-          - 쿠버 Istio 설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio 설치.md
-          - 쿠버 Istio gateway 설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Istio gateway 설정.md
-          - 쿠버 Kiali 네트워크설정: 1. 개발 및 배포 도구/kubernetes/쿠버 Kiali 네트워크설정.md
-          - 쿠버 대시보드 설치하기: 1. 개발 및 배포 도구/kubernetes/쿠버 대시보드 설치하기.md
-          - 쿠버 Argocd설치: 1. 개발 및 배포 도구/kubernetes/쿠버 Argocd설치.md
-          - 쿠버 로키에 설치 개선버전: 1. 개발 및 배포 도구/kubernetes/쿠버 로키에 설치 개선버전.md
-
-      - Scala:
-          - Scala 3 News: 1. 개발 및 배포 도구/Scala/Scala 3 News.md
-          - Scala 배경과 특징 그리고 자바: 1. 개발 및 배포 도구/Scala/Scala 배경과 특징 그리고 자바.md
-          - Scala with vscode, Hello Scala!: 1. 개발 및 배포 도구/Scala/Scala with vscode, Hello Scala!.md
-      - Spring Boot Batch:
-          - Spring Boot Batch 설명: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 설명.md
-          - Spring Boot Batch 성능 최적화: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 성능 최적화.md
-          - Spring Boot Batch 학습: 1. 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 학습.md
-      - nexus:
-          - NEXUS 설치: 1. 개발 및 배포 도구/nexus/NEXUS 설치.md
-          - NEXUS Disk 관리: 1. 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
-      - Harbor:
-          - Harbor 설치: 1. 개발 및 배포 도구/harbor/Harbor 설치.md
-      - nextjs:
-          - Nextjs Cdn 구성과 무중단 배포 전략: 1. 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
-      - sonarqube:
-          - SonarQube 설치 및 통합 가이드: 1. 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md
+    - 개발 및 배포 도구/index.md
+    - argocd:
+        - Argocd 성능개선: 개발 및 배포 도구/argocd/Argocd-성능개선.md
+    - docker:
+        - 도커 설치: 개발 및 배포 도구/docker/도커 설치.md
+        - 도커 사용을 편리하게: 개발 및 배포 도구/docker/도커 사용을 편리하게.md
+        - 도커 overlay 때문에 데이터 경로변경: 개발 및 배포 도구/docker/도커 overlay 때문에 데이터 경로변경.md
+    - gitlab:
+        - gitlab vscode에서 rebase, revent하기: 개발 및 배포 도구/gitlab/gitlab vscode에서 rebase, revent하기.md
+        - gitlab 서로다른 레포지토리 병합 미러링: 개발 및 배포 도구/gitlab/gitlab 서로다른 레포지토리 병합 미러링.md
+    - jenkins:
+        - 젠킨스 agent: 개발 및 배포 도구/jenkins/젠킨스 agent.md
+        - 젠킨스 FTP: 개발 및 배포 도구/jenkins/젠킨스 FTP.md
+        - 젠킨스 rebuild 후속작업: 개발 및 배포 도구/jenkins/젠킨스 rebuild 후속작업.md
+        - 젠킨스 슬랙: 개발 및 배포 도구/jenkins/젠킨스 슬랙.md
+        - 젠킨스 Role-Based Authorization Strategy: 개발 및 배포 도구/jenkins/젠킨스 Role-Based Authorization Strategy.md
+    - kubernetes:
+        - 쿠버 CNI의 종류: 개발 및 배포 도구/kubernetes/쿠버 CNI의 종류.md
+        - 쿠버 리디렉션이슈: 개발 및 배포 도구/kubernetes/쿠버 리디렉션이슈.md
+        - 쿠버 퍼드 생성 연습: 개발 및 배포 도구/kubernetes/쿠버 퍼드 생성 연습.md
+        - 쿠버 calico 설치: 개발 및 배포 도구/kubernetes/쿠버 calico 설치.md
+        - 쿠버 Loadbalancer 연습: 개발 및 배포 도구/kubernetes/쿠버 Loadbalancer 연습.md
+        - 쿠버 MetalLB 인스톨: 개발 및 배포 도구/kubernetes/쿠버 MetalLB 인스톨.md
+        - 쿠버 MetalLB 세팅이슈: 개발 및 배포 도구/kubernetes/쿠버 MetalLB 세팅이슈.md
+        - 쿠버 Istio 설치: 개발 및 배포 도구/kubernetes/쿠버 Istio 설치.md
+        - 쿠버 Istio gateway 설정: 개발 및 배포 도구/kubernetes/쿠버 Istio gateway 설정.md
+        - 쿠버 Kiali 네트워크설정: 개발 및 배포 도구/kubernetes/쿠버 Kiali 네트워크설정.md
+        - 쿠버 대시보드 설치하기: 개발 및 배포 도구/kubernetes/쿠버 대시보드 설치하기.md
+        - 쿠버 Argocd설치: 개발 및 배포 도구/kubernetes/쿠버 Argocd설치.md
+        - 쿠버 로키에 설치 개선버전: 개발 및 배포 도구/kubernetes/쿠버 로키에 설치 개선버전.md
+    - Scala:
+        - Scala 3 News: 개발 및 배포 도구/Scala/Scala 3 News.md
+        - Scala 배경과 특징 그리고 자바: 개발 및 배포 도구/Scala/Scala 배경과 특징 그리고 자바.md
+        - Scala with vscode, Hello Scala!: 개발 및 배포 도구/Scala/Scala with vscode, Hello Scala!.md
+    - Spring Boot Batch:
+        - Spring Boot Batch 설명: 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 설명.md
+        - Spring Boot Batch 성능 최적화: 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 성능 최적화.md
+        - Spring Boot Batch 학습: 개발 및 배포 도구/Spring Boot Batch/Spring Boot Batch 학습.md
+    - nexus:
+        - NEXUS 설치: 개발 및 배포 도구/nexus/NEXUS 설치.md
+        - NEXUS Disk 관리: 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
+    - Harbor:
+        - Harbor 설치: 개발 및 배포 도구/Harbor/Harbor설치.md
+    - nextjs:
+        - Nextjs Cdn 구성과 무중단 배포 전략: 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
+    - sonarqube:
+        - SonarQube 설치 및 통합 가이드: 개발 및 배포 도구/sonarqube/SonarQube 설치 및 통합 가이드.md    
   - 2. 운영체제 및 서버 관리:
       - 2. 운영체제 및 서버 관리/index.md
       - certbot:
