@@ -249,6 +249,7 @@ nav:
     - Harbor:
         - Harbor 설치: 개발 및 배포 도구/Harbor/Harbor설치.md
         - Harbor Proxy Cache: 개발 및 배포 도구/Harbor/Harbor Proxy Cache.md
+        - Harbor CICD 구성 (jenkins, secret): 개발 및 배포 도구/Harbor/Harbor CICD 구성 (jenkins, secret).md
     - nextjs:
         - Nextjs Cdn 구성과 무중단 배포 전략: 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
     - sonarqube:
