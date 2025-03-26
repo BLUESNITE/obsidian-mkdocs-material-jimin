@@ -40,9 +40,6 @@ pull push 권한 부여
 
 ![[Pasted image 20250325154548.png]]
 
-이름 robot$moon-dev+harbor-robot
-토큰 Yl8IhQ5tAjaM1RjceweMyH392jqcwNyG
-
 *Kubernetes 측 설정 / imagePullSecrets 등록 (Harbor 인증)*
 
 https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
