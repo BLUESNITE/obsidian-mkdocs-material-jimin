@@ -44,14 +44,6 @@ pull push 권한 부여
 
 https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 
-```
-kubectl create secret docker-registry harbor-cred \
-  --docker-server=harbor-dev.x2bee.com \
-  --docker-username=robot$moon-dev+harbor-robot \
-  --docker-password=xxxxxxxxxxxxxxxxx \
-  --namespace=moon-dev
-```
-
 *네트워크 접근 가능 여부*
 ```
 kubectl exec -n moon-dev <pod> -- nslookup harbor-dev.x2bee.com
