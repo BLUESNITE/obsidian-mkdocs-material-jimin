@@ -248,6 +248,7 @@ nav:
         - NEXUS Disk 관리: 개발 및 배포 도구/nexus/NEXUS Disk 관리.md
     - Harbor:
         - Harbor 설치: 개발 및 배포 도구/Harbor/Harbor설치.md
+        - Harbor Proxy Cache: 개발 및 배포 도구/Harbor/Harbor Proxy Cache.md
     - nextjs:
         - Nextjs Cdn 구성과 무중단 배포 전략: 개발 및 배포 도구/nextjs/Nextjs Cdn 구성과 무중단 배포 전략.md
     - sonarqube:
