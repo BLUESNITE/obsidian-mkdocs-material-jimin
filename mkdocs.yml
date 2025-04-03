@@ -309,6 +309,10 @@ nav:
       - 4. 모니터링 및 시각화/index.md
       - grafana:
           - grafana panels 모음: 4. 모니터링 및 시각화/grafana/grafana panels 모음.md
+      - zabbix:
+          - ZABBIX http 모니터링 벌집 구성하기: 4. 모니터링 및 시각화/zabbix/ZABBIX http 모니터링 벌집 구성하기.md
+          - ZABBIX로 Grafana 모니터링 시스템 대체하기: 4. 모니터링 및 시각화/zabbix/ZABBIX로 Grafana 모니터링 시스템 대체하기.md
+          - ZABBIX로 nvidia GPU 모니터링하기: 4. 모니터링 및 시각화/zabbix/ZABBIX로 nvidia GPU 모니터링하기.md
       - jconsole:
           - Jconsole to Local: 4. 모니터링 및 시각화/jconsole/Jconsole to Local.md
       - sampler:
