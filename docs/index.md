@@ -9,6 +9,9 @@ _최신 업데이트_
 3. [Superset 설치 2](http://bluesnite.xyz/4.%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%20%EB%B0%8F%20%EC%8B%9C%EA%B0%81%ED%99%94/superset/Superset%20%EC%84%A4%EC%B9%98%202%20(02-20))
 4. [메모앱 히스토리](http://bluesnite.xyz/6.%20%EA%B0%9C%EC%9D%B8%20%EB%B0%8F%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8/%EB%A9%94%EB%AA%A8%EC%95%B1%20%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC/)
 5. [Blog 기능 추가](http://bluesnite.xyz/blog/)
+6. GitLab Runner 설치 & 연동
+7. GitLab Runner Pipeline 작성
+8. GitLab Runner vs GitHub Action 차이점
 ---
 
 - 집중 학습 기술 스택

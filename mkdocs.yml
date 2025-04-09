@@ -219,6 +219,10 @@ nav:
         - 젠킨스 rebuild 후속작업: 개발 및 배포 도구/jenkins/젠킨스 rebuild 후속작업.md
         - 젠킨스 슬랙: 개발 및 배포 도구/jenkins/젠킨스 슬랙.md
         - 젠킨스 Role-Based Authorization Strategy: 개발 및 배포 도구/jenkins/젠킨스 Role-Based Authorization Strategy.md
+    - GitLabRunner:
+       - GitLab Runner 설치 & 연동: 개발 및 배포 도구/GitLab Runner/GitLab Runner 설치 & 연동.md
+       - GitLab Runner Pipeline 작성: 개발 및 배포 도구/GitLab Runner/GitLab Runner Pipeline 작성.md
+       - GitLab Runner vs GitHub Action 차이점: 개발 및 배포 도구/GitLab Runner/GitLab Runner vs GitHub Action 차이점.md
     - minikube:
         - minikube 설치: 개발 및 배포 도구/minikube/minikube 설치 (for mac).md
     - kubernetes:
