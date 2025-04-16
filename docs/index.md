@@ -12,6 +12,7 @@ _최신 업데이트_
 6. GitLab Runner 설치 & 연동
 7. GitLab Runner Pipeline 작성
 8. GitLab Runner vs GitHub Action 차이점
+9. NEXUS에서 NPM  레지스트리 설정 방법
 ---
 
 - 집중 학습 기술 스택
