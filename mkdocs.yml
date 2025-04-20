@@ -310,23 +310,25 @@ nav:
       - postgres:
           - PostgreSQL 설치: 3. 데이터 관리/postgres/PostgreSQL 설치.md
           - PostgreSQL CLI로 설치: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치.md
-  - 4. 모니터링 및 시각화:
-      - 4. 모니터링 및 시각화/index.md
+  - 모니터링 및 시각화:
+      - 모니터링 및 시각화/index.md
       - grafana:
-          - grafana panels 모음: 4. 모니터링 및 시각화/grafana/grafana panels 모음.md
+          - grafana panels 모음: 모니터링 및 시각화/grafana/grafana panels 모음.md
+      - sentry:
+          - Self-Hosted Sentry 설치 가이드: 모니터링 및 시각화/sentry/Self-Hosted Sentry 설치 가이드.md
       - zabbix:
-          - ZABBIX http 모니터링 벌집 구성하기: 4. 모니터링 및 시각화/zabbix/ZABBIX http 모니터링 벌집 구성하기.md
-          - ZABBIX로 Grafana 모니터링 시스템 대체하기: 4. 모니터링 및 시각화/zabbix/ZABBIX로 Grafana 모니터링 시스템 대체하기.md
-          - ZABBIX로 nvidia GPU 모니터링하기: 4. 모니터링 및 시각화/zabbix/ZABBIX로 nvidia GPU 모니터링하기.md
+          - ZABBIX http 모니터링 벌집 구성하기: 모니터링 및 시각화/zabbix/ZABBIX http 모니터링 벌집 구성하기.md
+          - ZABBIX로 Grafana 모니터링 시스템 대체하기: 모니터링 및 시각화/zabbix/ZABBIX로 Grafana 모니터링 시스템 대체하기.md
+          - ZABBIX로 nvidia GPU 모니터링하기: 모니터링 및 시각화/zabbix/ZABBIX로 nvidia GPU 모니터링하기.md
       - jconsole:
-          - Jconsole to Local: 4. 모니터링 및 시각화/jconsole/Jconsole to Local.md
+          - Jconsole to Local: 모니터링 및 시각화/jconsole/Jconsole to Local.md
       - sampler:
-          - sampler 설치: 4. 모니터링 및 시각화/sampler/sampler 설치.md
+          - sampler 설치: 모니터링 및 시각화/sampler/sampler 설치.md
       - scouter:
-          - scouter 설치: 4. 모니터링 및 시각화/scouter/scouter 설치.md
+          - scouter 설치: 모니터링 및 시각화/scouter/scouter 설치.md
       - superset:
-          - Superset 설치 (with Terraform): 4. 모니터링 및 시각화/superset/Superset 설치.md
-          - Superset 설치 2 (2025-02): 4. 모니터링 및 시각화/superset/Superset 설치 2 (02-20).md
+          - Superset 설치 (with Terraform): 모니터링 및 시각화/superset/Superset 설치.md
+          - Superset 설치 2 (2025-02): 모니터링 및 시각화/superset/Superset 설치 2 (02-20).md
   - 5. 클라우드 및 인프라 IaC:
       - 5. 클라우드 및 인프라 IaC/index.md
       - aws:
