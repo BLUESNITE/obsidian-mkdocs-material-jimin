@@ -1,7 +1,7 @@
 # 기억의 해방 - 개인위키
 
 @[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
-
+<!-- 
 _4월 업데이트_
 
 1. [Blog 기능 추가](http://bluesnite.xyz/blog/)
@@ -11,7 +11,7 @@ _4월 업데이트_
 5. NEXUS에서 NPM  레지스트리 설정 방법
 6. Self-Hosted Sentry 설치 가이드
 ---
-
+ -->
 - 집중 학습 기술 스택
 
 @[[icons|terraform-icon-144x144.png|#ffffff|90px|90px|p-2]]

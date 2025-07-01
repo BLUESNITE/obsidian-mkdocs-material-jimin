@@ -22,7 +22,7 @@
 # 주석:좌상단 텍스트
 # site_name: Material for MkDocs
 site_name: 나의 해방 일지
-site_url: http://bluesnite.xyz/
+site_url: http://z25959.com/
 site_author: Jeong Ji Min
 site_description: >-
   나의 작은 해방 일지, 내가 해방되는 그날까지 ...
@@ -113,7 +113,7 @@ plugins:
 
 extra_javascript:
   - stylesheets/extra.js
-
+  - .well-known/pki-validation/B519BD8C76388ECDFF1E483AC179A467.txt
 extra_css:
   - stylesheets/extra.css
   - stylesheets/tailwind.css
@@ -125,6 +125,7 @@ hooks:
 
 # Additional configuration
 extra:
+  include_dir: '.well-known'
   status:
     new: Recently added
     deprecated: Deprecated
