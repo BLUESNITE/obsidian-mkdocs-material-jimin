@@ -113,7 +113,6 @@ plugins:
 
 extra_javascript:
   - stylesheets/extra.js
-  - .well-known/pki-validation/B519BD8C76388ECDFF1E483AC179A467.txt
 extra_css:
   - stylesheets/extra.css
   - stylesheets/tailwind.css
@@ -315,6 +314,8 @@ nav:
       - 모니터링 및 시각화/index.md
       - grafana:
           - grafana panels 모음: 모니터링 및 시각화/grafana/grafana panels 모음.md
+      - fluentBit:
+          - Fluent Bit 설치 & 관측: 모니터링 및 시각화/fluentBit/Fluent Bit 설치 & 관측 (filter).md
       - sentry:
           - Self-Hosted Sentry 설치 가이드: 모니터링 및 시각화/sentry/Self-Hosted Sentry 설치 가이드.md
       - zabbix:
