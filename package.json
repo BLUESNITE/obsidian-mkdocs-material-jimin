@@ -24,6 +24,7 @@
     "url": "https://github.com/squidfunk/mkdocs-material.git"
   },
   "scripts": {
+    "mac:cli": "cd /Users/blue/project/venv && source mymkdocs/bin/activate && cd /Users/blue/project/my/obsidian-mkdocs-material-jimin && python3.12 -m mkdocs serve",
     "mac:cli1": "cd /Users/blue/project/venv && source mymkdocs/bin/activate",
     "mac:cli2": "cd /Users/blue/project/my/obsidian-mkdocs-material-jimin",
     "mac:cli3": "python3.12 -m mkdocs serve",

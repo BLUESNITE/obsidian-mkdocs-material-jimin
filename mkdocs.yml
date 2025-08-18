@@ -296,6 +296,7 @@ nav:
       - opensearch:
           - 오픈서치 설치: 3. 데이터 관리/opensearch/오픈서치 설치.md
           - 오픈서치 HA: 3. 데이터 관리/opensearch/오픈서치 HA.md
+          - 오픈서치 ML 클러스터 GPU 사용: 3. 데이터 관리/opensearch/오픈서치 ML 클러스터 GPU 사용.md
           - 오픈서치 knn설정: 3. 데이터 관리/opensearch/오픈서치 knn설정.md
           - 오픈서치 대시보드 구성 요령: 3. 데이터 관리/opensearch/오픈서치 대시보드 구성 요령.md
       - Apache Spark:

@@ -1,6 +1,10 @@
 # 기억의 해방 - 개인위키
 
 @[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
+
+_8월 업데이트_
+1. 오픈서치 ML 클러스터 GPU 사용
+
 <!-- 
 _4월 업데이트_
 
