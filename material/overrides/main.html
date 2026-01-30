@@ -4,28 +4,65 @@
 {% extends "base.html" %}
 {% block extrahead %}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.7c86dd97.min.css' | url }}">
+  <style>
+    /* 랜덤 버튼 스타일 - 헤더 우측 */
+    .md-header__random {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3rem 0.6rem;
+      margin-right: 0.4rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--md-primary-bg-color);
+      border-radius: 0.2rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      white-space: nowrap;
+      order: -1;  /* flexbox 순서를 맨 앞으로 */
+    }
+    .md-header__random:hover {
+      transform: scale(1.05);
+      color: var(--md-primary-bg-color);
+    }
+    /* 팔레트/검색 영역을 flex로 감싸서 순서 조정 */
+    .md-header__inner > nav + * {
+      display: flex;
+      align-items: center;
+    }
+  </style>
 {% endblock %}
 {% block announce %}
-<!-- 주석:최상단 여닫 --> 
-<!-- 
-For updates follow <strong>@squidfunk</strong> on
-  <a rel="me" href="https://fosstodon.org/@squidfunk">
-    <span class="twemoji mastodon">
-      {% include ".icons/fontawesome/brands/mastodon.svg" %}
-    </span>
-    <strong>Fosstodon</strong>
-  </a>
-  and
-  <a href="https://twitter.com/squidfunk">
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
-  </a>
---> 
-<!--  -->
+<!-- 주석:최상단 여닫 - 비움 -->
 {% endblock %}
 {% block scripts %}
   {{ super() }}
+  <script>
+    // 헤더에 랜덤 버튼 삽입 - 팔레트(다크모드 토글) 왼쪽에 배치
+    document.addEventListener('DOMContentLoaded', function() {
+      // nav.md-tabs 다음 요소들을 감싸는 wrapper 찾기
+      const headerInner = document.querySelector('.md-header__inner');
+      const palette = document.querySelector('form.md-header__option');
+      
+      if (palette) {
+        // 랜덤 버튼 생성
+        const randomBtn = document.createElement('a');
+        randomBtn.href = 'javascript:void(0)';
+        randomBtn.onclick = goToRandomPage;
+        randomBtn.className = 'md-header__random';
+        randomBtn.title = '랜덤 글 읽기 (Shift+R)';
+        randomBtn.innerHTML = '🎲';
+        
+        // 팔레트의 첫 번째 label 앞에 삽입
+        const firstLabel = palette.querySelector('label');
+        if (firstLabel) {
+          palette.insertBefore(randomBtn, palette.firstChild);
+        } else {
+          palette.parentNode.insertBefore(randomBtn, palette);
+        }
+      }
+    });
+  </script>
   <script src="{{ 'assets/javascripts/custom.4e50d00f.min.js' | url }}"></script>
 {% endblock %}
