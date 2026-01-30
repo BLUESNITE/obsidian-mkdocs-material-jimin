@@ -2,14 +2,12 @@
 
 @[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
 
-_8월 업데이트_
+_2026년도 업데이트_
 
-1. 오픈서치 ML 클러스터 GPU 사용
-
+1. [아주 작은 일](https://z25959.com/6.%20%EA%B0%9C%EC%9D%B8%20%EB%B0%8F%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC/%EC%83%9D%EA%B0%81//아주%20작은%20일/)
 <!-- 
 _4월 업데이트_
 
-1. [Blog 기능 추가](http://bluesnite.xyz/blog/)
 2. GitLab Runner 설치 & 연동
 3. GitLab Runner Pipeline 작성
 4. GitLab Runner vs GitHub Action 차이점
