@@ -1,5 +1,5 @@
-/* KyoboHand 폰트 불러오기 */
-@import url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff");
+/* Pretendard 폰트 불러오기 - 네이버 스타일 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 /* 옵시디언태그 > */
 .md-main .md-content p > strong {
@@ -18,15 +18,40 @@
   color: var(--md-code-hl-string-color);
 }
 
-/* 페이지 전체에 적용할 폰트 설정 */
+/* 페이지 전체에 적용할 폰트 설정 - 네이버 스타일 */
 body {
-  font-family: "KyoboHand", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* 제목 폰트 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* 본문 텍스트 */
+.md-typeset p,
+.md-typeset li,
+.md-typeset td {
+  font-size: 0.7rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
 }
 
 /* 코드 블록에 적용할 폰트 설정 */
-.md-typeset :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 0.7rem;
-  line-height: 1.6;
+.md-typeset code,
+.md-typeset pre {
+  font-family: "D2Coding", "Fira Code", Consolas, Monaco, "Courier New", monospace;
+  font-size: 0.85em;
+  letter-spacing: 0;
 }
 
 .md-typeset code {
