@@ -52,14 +52,14 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    - navigation.expand # 네비게이션확장
+    # - navigation.expand # 네비게이션확장
     - navigation.footer
     - navigation.indexes # 폴더 인덱스 카테고리 표기
     - navigation.instant # 인스턴트 프리페치
     # - navigation.instant.prefetch # 인스턴트 프리페치 (별로인듯)
     - navigation.instant.progress # 인스턴트 진행률 표시기
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections # 섹션 렌더링 비활성화하여 접기/펼치기 활성화
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
