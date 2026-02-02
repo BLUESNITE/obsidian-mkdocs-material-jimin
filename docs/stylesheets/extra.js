@@ -121,21 +121,70 @@ document.addEventListener('DOMContentLoaded', function() {
     const content = document.querySelector('.md-content');
     if (!content) return;
     
-    // 이미 변환된 링크는 건너뛰기
-    const paragraphs = content.querySelectorAll('p, li');
-    
-    paragraphs.forEach(p => {
-      if (p.querySelector('.search-link')) return;
-      
-      const html = p.innerHTML;
-      const regex = /\[\[([^\]]+)\]\]/g;
-      
-      if (regex.test(html)) {
-        const newHtml = html.replace(/\[\[([^\]]+)\]\]/g, 
-          '<a href="javascript:void(0)" class="search-link" data-search="$1">$1</a>'
-        );
-        p.innerHTML = newHtml;
+    // 모든 텍스트 노드 순회
+    const walker = document.createTreeWalker(
+      content,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function(node) {
+          // 이미 변환된 링크 내부는 스킵
+          if (node.parentElement && node.parentElement.classList.contains('search-link')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          // [[...]] 패턴이 있는 노드만 처리
+          if (node.nodeValue && node.nodeValue.includes('[[') && node.nodeValue.includes(']]')) {
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          return NodeFilter.FILTER_SKIP;
+        }
       }
+    );
+    
+    const nodesToReplace = [];
+    let node;
+    
+    while (node = walker.nextNode()) {
+      nodesToReplace.push(node);
+    }
+    
+    nodesToReplace.forEach(textNode => {
+      const text = textNode.nodeValue;
+      const regex = /\[\[([^\]]+)\]\]/g;
+      const matches = [...text.matchAll(regex)];
+      
+      if (matches.length === 0) return;
+      
+      const fragment = document.createDocumentFragment();
+      let lastIndex = 0;
+      
+      matches.forEach(match => {
+        // 매치 앞의 텍스트 추가
+        if (match.index > lastIndex) {
+          fragment.appendChild(
+            document.createTextNode(text.substring(lastIndex, match.index))
+          );
+        }
+        
+        // 검색 링크 생성
+        const link = document.createElement('a');
+        link.href = 'javascript:void(0)';
+        link.className = 'search-link';
+        link.setAttribute('data-search', match[1]);
+        link.textContent = match[1];
+        fragment.appendChild(link);
+        
+        lastIndex = match.index + match[0].length;
+      });
+      
+      // 남은 텍스트 추가
+      if (lastIndex < text.length) {
+        fragment.appendChild(
+          document.createTextNode(text.substring(lastIndex))
+        );
+      }
+      
+      // 텍스트 노드를 fragment로 교체
+      textNode.parentNode.replaceChild(fragment, textNode);
     });
   }
   
