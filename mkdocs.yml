@@ -314,6 +314,9 @@ nav:
           - PostgreSQL CLI로 설치: 3. 데이터 관리/postgres/PostgreSQL CLI로 설치.md
   - 모니터링 및 시각화:
       - 모니터링 및 시각화/index.md
+      - whatab:
+          - Whatab 모니터링 구축하기 기초 (JAVA): 모니터링 및 시각화/whatab/Whatab 모니터링 구축하기 기초 자바.md
+          - Whatab 모니터링 구축하기 기초 (NODE): 모니터링 및 시각화/whatab/Whatab 모니터링 구축하기 기초 노드.md
       - grafana:
           - grafana panels 모음: 모니터링 및 시각화/grafana/grafana panels 모음.md
       - fluentBit:
