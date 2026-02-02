@@ -100,6 +100,10 @@ def main():
     
     # docs 디렉토리 내의 모든 index.md 찾기
     for index_path in docs_dir.rglob('index.md'):
+        # docs/index.md는 제외 (최상위)
+        if index_path == docs_dir / 'index.md':
+            continue
+        
         # 제외 디렉토리 체크
         should_skip = False
         for exclude in EXCLUDE_DIRS:
