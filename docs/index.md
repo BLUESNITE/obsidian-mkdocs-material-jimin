@@ -5,16 +5,9 @@
 _2026년도 업데이트_
 
 1. [아주 작은 일](https://z25959.com/6.%20%EA%B0%9C%EC%9D%B8%20%EB%B0%8F%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC/%EC%83%9D%EA%B0%81/%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%9D%BC/)
-<!-- 
-_4월 업데이트_
 
-2. GitLab Runner 설치 & 연동
-3. GitLab Runner Pipeline 작성
-4. GitLab Runner vs GitHub Action 차이점
-5. NEXUS에서 NPM  레지스트리 설정 방법
-6. Self-Hosted Sentry 설치 가이드
----
- -->
+2. 모니터링 및 시각화 -> Whatab 모니터링 구축하기
+
 - 집중 학습 기술 스택
 
 @[[icons|terraform-icon-144x144.png|#ffffff|90px|90px|p-2]]
