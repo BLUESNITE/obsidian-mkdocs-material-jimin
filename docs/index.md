@@ -1,40 +1,175 @@
-# 기억의 해방 - 개인위키
-
-@[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
-
-_2026년도 업데이트_
-
-1. [아주 작은 일](https://z25959.com/6.%20%EA%B0%9C%EC%9D%B8%20%EB%B0%8F%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC/%EC%83%9D%EA%B0%81/%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%9D%BC/)
-
-2. 모니터링 및 시각화 -> Whatab 모니터링 구축하기
-
-- 집중 학습 기술 스택
-
-@[[icons|terraform-icon-144x144.png|#ffffff|90px|90px|p-2]]
-@[[icons|server-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|icons8-쿠버네티스-144.png|#ffffff|90px|90px|p-2]]
-@[[icons|icons8-부두-노동자-144.png|#ffffff|90px|90px|p-2]]
-@[[icons|argo-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|jenkins-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|linux-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-
-- 다루어본 기술 스택
-
-@[[icons|nginx-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|search-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|spring-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|lock-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|scouter-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|postgres-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|nextjs-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|openshift-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|mongodb-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-@[[icons|python-icon-144x144.svg|#ffffff|90px|90px|p-2]]
-
-부족한 내용이더라도 공유하고 기록하고자 시작하였습니다.
-
-끈질긴 엔지니어를 꿈꾸고, 인프라 생태계에 일하고 있습니다.
-
-그리고 모든 issue를 해결해주는데 재미를 느낍니다.
-
-방문에 감사합니다.
+#### 📁 2. 운영체제 및 서버 관리
+  - certbot
+    - Let's encrypt
+  - fedora
+    - fedora Workstation 설치
+  - linux
+    - linux xrdp 설정
+    - linux 자동완성기능
+  - nginx
+    - Nginx Log 관리하기
+    - Nginx conf 옵션확인
+    - Nginx 설정 테스트 및 재시작
+  - qemu-kvm
+    - kvm Rockey Kickstart
+    - kvm containerd 디스크 문제 해결 방법
+    - kvm 명령어
+    - kvm 아이피 확인절차
+  - rockey
+    - rockey 이미지 기본 설치항목
+  - ubuntu
+    - ubuntu GPU SERVER 설치
+    - ubuntu IP고정
+    - ubuntu desktop install
+    - ubuntu nvidia-container-toolkit error
+    - ubuntu ssh 접속을 위한 포트오픈
+    - ubuntu 부트로더 및 절전모드 관리
+  - window
+    - powershell에서 디렉토리 트리보기
+#### 📁 3. 데이터 관리
+  - Apache Spark
+    - Apache Spark 배경과 특징
+    - Spark RDD
+  - mongodb
+    - Mongodb database 생성 및 CRUD 테스트
+  - mysql
+    - Mysql 설치
+  - opensearch
+    - 오픈서치 HA
+    - 오픈서치 ML 클러스터 GPU 사용
+    - 오픈서치 knn설정
+    - 오픈서치 대시보드 구성 요령
+    - 오픈서치 설치
+  - postgres
+    - PostgreSQL CLI로 설치
+    - PostgreSQL CLI로 설치하고 접속확인까지
+    - PostgreSQL 설치
+    - PostgreSQL-설치
+  - qdrant
+    - Qdrant 설치
+  - redis
+    - redis 만료시간 관리 (CLI)
+    - redis 새로운 관리프로그램과 사용
+#### 📁 5. 클라우드 및 인프라 IaC
+  - ansible
+    - ansible kvm 자동화 설치
+    - ansible 설치
+    - ansible 학습
+  - aws
+    - AWS EC2에 SSH 접속하기 위한 최소작업
+    - AWS EKS 자격증명하기
+    - AWS 다른나라 리전에서 한국사이트 접속
+  - smtp
+    - SMTP 메일 전송 프로토콜
+  - terraform
+    - Terraform `user_data` 사용 및 로그확인
+    - Terraform provisioner 사용방법
+    - Terraform 변수 정의하기
+    - Terraform 설치 후 테스트
+#### 📁 6. 개인 및 블로그 관리
+  - 다양한것들
+    - 2024 브랜드별 존엄 런닝화들
+    - Mac 캘린더에 JIRA 일정 통합하기
+  - 내소개
+    - 내 소개
+  - 블로그
+    - 블로그 호스팅 1편 - quartz
+    - 블로그 호스팅 2편 - mkdocs
+    - 블로그 호스팅 3편 - 도메인 변경 그리고 인증서
+  - 생각
+    - 군자
+    - 스토리 포인트는 무의미하다의 글
+    - 아주 작은 일
+    - 옳은 종류의 고집
+    - 추론 사다리
+  - 옵시디언
+    - 메모앱 히스토리
+    - 옵시디언 to Mkdocs 태그보드
+    - 플러그인 - Execute Code
+  - 추천글
+    - 갈때를 아는 방법
+    - 필요한 인재와 가장 중요한 자질
+  - 학습
+    - 내가 학습한 워크플로우
+    - 워크플로우
+#### 📁 개발 및 배포 도구
+  - GitLab Runner
+    - GitLab Runner Pipeline 작성
+    - GitLab Runner vs GitHub Action 차이점
+    - GitLab Runner 설치 & 연동
+  - Harbor
+    - Harbor CICD 구성 (jenkins, secret)
+    - Harbor Proxy Cache
+    - Harbor설치
+  - Scala
+    - Scala 3 News
+    - Scala with vscode, Hello Scala!
+    - Scala 배경과 특징 그리고 자바
+  - Spring Boot Batch
+    - Spring Boot Batch 설명
+    - Spring Boot Batch 성능 최적화
+    - Spring Boot Batch 학습
+  - argocd
+    - Argocd-성능개선
+  - docker
+    - 도커 overlay 때문에 데이터 경로변경
+    - 도커 사용을 편리하게
+    - 도커 설치
+  - gitlab
+    - gitlab vscode에서 rebase, revent하기
+    - gitlab 서로다른 레포지토리 병합 미러링
+  - jenkins
+    - 젠킨스 FTP
+    - 젠킨스 Role-Based Authorization Strategy
+    - 젠킨스 agent
+    - 젠킨스 rebuild 후속작업
+    - 젠킨스 슬랙
+  - kubernetes
+    - k3s kubeflow Part 1 - 기초 개념 가이드
+    - 쿠버 Argocd설치
+    - 쿠버 CNI의 종류
+    - 쿠버 Istio gateway 설정
+    - 쿠버 Istio 설치
+    - 쿠버 Kiali 네트워크설정
+    - 쿠버 Loadbalancer 연습
+    - 쿠버 MetalLB 세팅이슈
+    - 쿠버 MetalLB 인스톨
+    - 쿠버 calico 설치
+    - 쿠버 대시보드 설치하기
+    - 쿠버 로키에 설치 개선버전
+    - 쿠버 리디렉션이슈
+    - 쿠버 퍼드 생성 연습
+  - minikube
+    - minikube 설치 (for mac)
+  - nextjs
+    - Nextjs Cdn 구성과 무중단 배포 전략
+  - nexus
+    - NEXUS Disk 관리
+    - NEXUS 설치
+    - NEXUS에서 NPM  레지스트리 설정 방법
+  - sonarqube
+    - SonarQube 설치 및 통합 가이드
+#### 📁 모니터링 및 시각화
+  - fluentBit
+    - Fluent Bit 설치 & 관측 (filter)
+  - grafana
+    - grafana panels 모음
+  - jconsole
+    - Jconsole to Local
+  - sampler
+    - sampler 설치
+  - scouter
+    - scouter 설치
+  - sentry
+    - Self-Hosted Sentry 설치 가이드
+    - Sentry Spring Boot SDK 구성
+  - superset
+    - Superset 설치
+    - Superset 설치2
+  - whatab
+    - Whatab 모니터링 구축하기 기초 노드
+    - Whatab 모니터링 구축하기 기초 자바
+  - zabbix
+    - ZABBIX http 모니터링 벌집 구성하기
+    - ZABBIX로 Grafana 모니터링 시스템 대체하기
+    - ZABBIX로 nvidia GPU 모니터링하기
