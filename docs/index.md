@@ -8,6 +8,8 @@ _2026년도 업데이트_
 
 2. 모니터링 및 시각화 -> Whatab 모니터링 구축하기
 
+___
+
 - 집중 학습 기술 스택
 
 @[[icons|terraform-icon-144x144.png|#ffffff|90px|90px|p-2]]
