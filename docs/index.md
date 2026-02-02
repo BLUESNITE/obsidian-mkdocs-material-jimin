@@ -2,11 +2,10 @@
 
 @[[drama|image_without_text.png,image_without_text2.png,image_without_text3.png||]]
 
-_2026년도 업데이트_
+___
 
-1. [아주 작은 일](https://z25959.com/6.%20%EA%B0%9C%EC%9D%B8%20%EB%B0%8F%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B4%80%EB%A6%AC/%EC%83%9D%EA%B0%81/%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%9D%BC/)
-
-2. 모니터링 및 시각화 -> Whatab 모니터링 구축하기
+1. [[아주 작은 일]]
+2. [[Whatab]]
 
 ___
 

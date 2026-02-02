@@ -81,3 +81,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(document.body, { childList: true, subtree: true });
 });
+
+// ========================================
+// 🔍 검색 링크 기능
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+  // 초기 변환
+  convertSearchLinks();
+  
+  // MkDocs Material의 페이지 네비게이션 감지
+  const observer = new MutationObserver(function(mutations) {
+    convertSearchLinks();
+  });
+  
+  const content = document.querySelector('.md-content');
+  if (content) {
+    observer.observe(content, { childList: true, subtree: true });
+  }
+  
+  // 검색 링크 클릭 이벤트 (이벤트 위임)
+  document.body.addEventListener('click', function(event) {
+    const target = event.target.closest('.search-link');
+    
+    if (target) {
+      event.preventDefault();
+      event.stopPropagation();
+      
+      const searchTerm = target.getAttribute('data-search') || target.textContent;
+      if (!searchTerm) return;
+      
+      // 검색 실행
+      triggerSearch(searchTerm);
+      
+      return false;
+    }
+  }, true);
+  
+  function convertSearchLinks() {
+    const content = document.querySelector('.md-content');
+    if (!content) return;
+    
+    // 이미 변환된 링크는 건너뛰기
+    const paragraphs = content.querySelectorAll('p, li');
+    
+    paragraphs.forEach(p => {
+      if (p.querySelector('.search-link')) return;
+      
+      const html = p.innerHTML;
+      const regex = /\[\[([^\]]+)\]\]/g;
+      
+      if (regex.test(html)) {
+        const newHtml = html.replace(/\[\[([^\]]+)\]\]/g, 
+          '<a href="javascript:void(0)" class="search-link" data-search="$1">$1</a>'
+        );
+        p.innerHTML = newHtml;
+      }
+    });
+  }
+  
+  function triggerSearch(query) {
+    // 검색 입력창 직접 찾기
+    const searchInput = document.querySelector('[data-md-component="search-query"]') || 
+                        document.querySelector('input[placeholder*="검색"]') ||
+                        document.querySelector('#__search');
+    
+    if (searchInput) {
+      // 검색창이 닫혀있으면 열기
+      const searchLabel = document.querySelector('label[for="__search"]');
+      if (searchLabel && !searchInput.value) {
+        searchLabel.click();
+      }
+      
+      // 검색어 입력
+      setTimeout(() => {
+        searchInput.value = query;
+        searchInput.focus();
+        
+        // 검색 트리거
+        const inputEvent = new Event('input', { bubbles: true });
+        searchInput.dispatchEvent(inputEvent);
+        
+        const keyEvent = new KeyboardEvent('keyup', { 
+          bubbles: true,
+          key: 'Enter',
+          keyCode: 13
+        });
+        searchInput.dispatchEvent(keyEvent);
+      }, 150);
+    }
+  }
+});
