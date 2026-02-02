@@ -73,13 +73,13 @@ spec:
 		              value: "{{ .Values.application.name }}"
 		            {{ if eq .Values.application.namespace "aaa-stg" }}
 		            - name: license
-		              value: "x210gdopq8lpb-z7f3s1ko6ihhqb-x40suulp55afbr"
+		              value: "xxxxxxxxx4x5x45x45x54x545x45xxx"
 		            - name: whatap.server.host
 		              value: "10.100.0.22"
 		            {{ end }}
 		            {{ if eq .Values.application.namespace "aaa-prd" }}
 		            - name: license
-		              value: "x20ogpd6482ug-x7bus2kh2mf5p2-x276fissh5mg4q"
+		              value: "xdd45d45d4d54d54d545d45d45d45d45"
 		            - name: whatap.server.host
 		              value: "10.100.0.22"
 		            {{ end }}

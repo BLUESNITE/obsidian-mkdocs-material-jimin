@@ -42,7 +42,7 @@ def mappings = [
 
 	- 해당 파일에서 변수값 확인 필요
 
-	- license=x20ogpd6482ug-x7bus2kh2mf5p2-x276fissh5mg4q (세팅값 확인)
+	- license=x245s45s4s54s54s5s45s (세팅값 확인)
 
 	- whatap.server.host=10.100.0.22 (설치형일때 서버 hostip)
 
